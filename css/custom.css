@@ -7,16 +7,18 @@ html{
   scroll-behavior: smooth;
 }
 .navbar {
-  padding: 20px !important;
+  padding: 10px !important;
+  max-height: 10vh;
 }
 .navbar-brand {
   font-size: 5rem;
   font-weight: 700;
+  color: #252323;
 }
 
 .landing {
   position: relative;
-  height: 100vh;
+  height: 90vh;
   justify-content: space-between;
 }
 
@@ -26,7 +28,7 @@ html{
 .landing .left-text h1 {
   font-size: 48px;
   font-weight: 700;
-  color: #333;
+  color: #252323;
 }
 .landing .right-text {
   width: 314px;
@@ -316,7 +318,7 @@ a .transparent:hover{
 }
 .contact .right-text-contact h2{
   font-weight: bold;
-  font-size: 32px;
+  font-size: 36px;
   margin-bottom: 15px;
 }
 .contact .right-text-contact h6{

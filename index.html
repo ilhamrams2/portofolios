@@ -17,11 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/fontawesome.css" />
-    <script src="css/fontawesome.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   </head>
   <body>
-    <nav class="navbar fixed-top">
+    <nav class="navbar">
       <div class="container">
         <a class="navbar-brand" href="#">Portfel.</a>
         <img src="images/icons/nav/menu.svg" alt="" srcset="" />
@@ -72,9 +71,9 @@
     <section class="about" id="about">
       <div class="container c-about">
         <div class="left-text-about">
-          <h2>So, who i am?</h2>
-          <h6>im Web Developer & UI/UX Design</h6>
-          <p>
+          <h2 data-aos="fade-down" data-aos-duration="800">So, who i am?</h2>
+          <h6 data-aos="fade-down" data-aos-duration="800">im Web Developer & UI/UX Design</h6>
+          <p data-aos="fade-down" data-aos-duration="800">
             I am a Software Engineering graduate and an active 6th-semester
             student at Universitas Bina Sarana Informatika, based in Cibinong,
             Indonesia. My passion for coding started in 2019, focusing on web
@@ -82,14 +81,14 @@
             projects, creating functional and visually appealing digital
             experiences.
           </p>
-          <a href="#contact">
-            <div class="btn">Contact me</div>
+          <a href="#contact" >
+            <div class="btn" data-aos="fade-right" data-aos-duration="800">Contact me</div>
           </a>
           <a href="#">
-            <div class="btn transparent ms-1">See project</div>
+            <div class="btn transparent ms-1" data-aos="fade-left" data-aos-duration="800">See project</div>
           </a>
         </div>
-        <div class="right-about">
+        <div class="right-about" data-aos="fade-left" data-aos-duration="800">
           <!-- <div class="logo">Portfel.</div> -->
         </div>
         <div class="hiasan">
@@ -98,7 +97,7 @@
           <div class="box"></div>
         </div>
         <div class="hiasan2"></div>
-        <div class="hiasan3"></div>
+        <div class="hiasan3" data-aos="fade-right" data-aos-duration="600"></div>
       </div>
     </section>
 
@@ -191,7 +190,7 @@
         </div>
       </div>
     </section>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrambleTextPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -202,6 +201,9 @@
         chars: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",
         speed: 0.3,
       });
+    </script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
