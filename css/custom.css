@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif !important;
+}
+.navbar {
+  padding: 20px !important;
+}
+.navbar-brand {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.landing {
+  position: relative;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.landing .left-text {
+  max-width: 305px;
+}
+.landing .left-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #333;
+}
+.landing .right-text {
+  width: 314px;
+}
+.landing .right-text p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #252323;
+  text-align: right;
+}
+.landing .images {
+  position: relative;
+  padding: 0;
+  width: 450px;
+  height: 450px;
+  background-image: url("../images/bulet/b1.png");
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: -2;
+  animation: moveCircle 4s infinite linear;
+}
+.landing .images img {
+  opacity: 0;
+}
+
+.landing .hiasan{
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 194px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hiasan .box{
+  width: 58px;
+  height: 16px;
+  background-color: #EFEFEF;
+  border-radius: 10px;
+}
+
+.landing .sosmed{
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  width: 158px;
+}
+
+.about{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.about .c-about{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about .left-text-about{
+  max-width: 470px;
+  text-align: justify;
+}
+.about .left-text-about h2{
+  font-weight: bold;
+  font-size: 32px;
+  margin: 0;
+}
+.about .left-text-about h6{
+  font-weight: medium;
+  font-size: 16px;
+  margin: 10px 0;
+}
+.about .left-text-about p{
+  font-weight: medium;
+  font-size: 12px;
+}
+
+.about .left-text-about a{
+  color: white;
+  font-size: 11px;
+  text-decoration: none;
+  padding: 0 !important;
+}
+
+a .btn{
+  background-color: #929CDD !important;
+  padding: 8px 15px;
+  font-size: 11px;
+  color: white;
+}
+
+a .btn:hover{
+  background-color: #717fde !important;
+  color: white;
+}
+
+.about .left-text-about a .transparent{
+  background-color: #ffffff !important;
+  padding: 8px 15px;
+  font-size: 11px;
+  color: #252323;
+  text-decoration: underline;
+}
+
+.about .right-about {
+  background: url("../images/bulet/b2.png") no-repeat center/cover;
+  height: 467px;
+  width: 467px;
+  position: relative;
+  z-index: -2;
+  animation: spin 5s linear infinite; /* Tambahkan animasi */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*.about .right-about::before{
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 0px;
+  z-index: -1;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 50%;
+
+   animation: rotateMove 6s infinite linear; 
+}
+*/
+.about .right-about::after{
+  content: "";
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+  background: url("../images/bulet/my.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 400px;
+  
+}
+
+.about .right-about .logo{
+  position: absolute;
+  left: 55px;
+  top: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: 700;
+}
+.about .hiasan{
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 194px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about .hiasan2{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 195px;
+  height: 95px;
+  background-color: #EFEFEF;
+  z-index: -3;
+}
+.about .hiasan3{
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 116px;
+  height: 95px;
+  background-color: #EFEFEF;
+  z-index: -3;
+}
+
+.service{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.service h2{
+  font-size: 32px;
+  color: #252323;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.service .web-dev h4, .uiux-dev h4{
+  font-size: 16px;
+  color: #252323;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.service .web-dev, .uiux-dev p{
+  font-size: 12px;
+  color: #252323;
+  font-weight: medium;
+}
+
+

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/8.7.1/typeit.min.js"></script>
+<h1 id="scramble">Hello, World!</h1>
+
+<script>
+  new TypeIt("#scramble", {
+    speed: 50,
+    waitUntilVisible: true,
+    beforeString: "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+  }).go();
+</script>
+</body>
+</html>
