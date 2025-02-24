@@ -3,6 +3,9 @@
   padding: 0;
   font-family: "Poppins", sans-serif !important;
 }
+html{
+  scroll-behavior: smooth;
+}
 .navbar {
   padding: 20px !important;
 }
@@ -32,11 +35,12 @@
   font-size: 14px;
   font-weight: 600;
   color: #252323;
-  text-align: right;
+  text-align: justify;
 }
 .landing .images {
   position: relative;
   padding: 0;
+  left: -25px;
   width: 450px;
   height: 450px;
   background-image: url("../images/bulet/b1.png");
@@ -53,13 +57,13 @@
   position: absolute;
   bottom: 30px;
   left: 0;
-  width: 194px;
+  width: 155px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .hiasan .box{
-  width: 58px;
+  width: 48px;
   height: 16px;
   background-color: #EFEFEF;
   border-radius: 10px;
@@ -129,6 +133,10 @@ a .btn:hover{
   color: #252323;
   text-decoration: underline;
 }
+a .transparent:hover{
+  background-color: #717fde !important;
+  color: white;
+}
 
 .about .right-about {
   background: url("../images/bulet/b2.png") no-repeat center/cover;
@@ -136,17 +144,8 @@ a .btn:hover{
   width: 467px;
   position: relative;
   z-index: -2;
-  animation: spin 5s linear infinite; /* Tambahkan animasi */
 }
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 /*.about .right-about::before{
   content: "";
   position: absolute;
@@ -191,7 +190,7 @@ a .btn:hover{
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
-  width: 194px;
+  width: 155px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -201,7 +200,7 @@ a .btn:hover{
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  width: 195px;
+  width: 350px;
   height: 95px;
   background-color: #EFEFEF;
   z-index: -3;
@@ -221,6 +220,7 @@ a .btn:hover{
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  position: relative;
 }
 .service h2{
   font-size: 32px;
@@ -234,10 +234,148 @@ a .btn:hover{
   font-weight: bold;
   margin-bottom: 20px;
 }
-.service .web-dev, .uiux-dev p{
+.service .web-dev p, .uiux-dev p{
   font-size: 12px;
   color: #252323;
   font-weight: medium;
+  text-align: justify;
 }
+
+.service .wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.service .hiasan{
+  position: absolute;
+  bottom: 30px;
+  right: 120px;
+  width: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.service .hiasan2{
+  position: absolute;
+  top: 30%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 95px;
+  background-color: #EFEFEF;
+  z-index: -3;
+}
+.service .hiasan3{
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  width: 116px;
+  height: 95px;
+  background-color: #EFEFEF;
+  z-index: -3;
+}
+
+.contact{
+  height: 90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.contact .c-contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact .left-contact{
+  background: url("../images/bulet/b2.png") no-repeat center/cover;
+  height: 429px;
+  width: 429px;
+  border-radius: 50%;
+  position: relative;
+  z-index: -1;
+}
+.contact .left-contact::after{
+ content: "";
+ position: absolute;
+ background-color: white;
+ top: 50%;
+ right: -50%;
+ transform: translate(-50%, -50%);
+ z-index: -1;
+ width: 245px;
+ height: 259px;
+ border-radius: 50%;
+ animation: rotateMove 6s infinite linear;
+}
+
+.contact .right-text-contact{
+  width: 400px;
+  position: relative;
+  left: -70px;
+}
+.contact .right-text-contact h2{
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+.contact .right-text-contact h6{
+  font-weight: medium;
+  font-size: 16px;
+}
+.contact .hiasan{
+  position: absolute;
+  bottom: 30px;
+  right: 120px;
+  width: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact .hiasan2{
+  position: absolute;
+  top: 30%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 95px;
+  background-color: #EFEFEF;
+  z-index: -3;
+}
+.contact .hiasan3{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 95px;
+  background-color: #EFEFEF;
+  z-index: -3;
+}
+
+
+
+
+
+
+.footer{
+  height: 10vh;
+  background-color: #929CDD;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.footer .c-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} 
+.footer .left-footer span{
+  margin: 0 !important;
+  padding: 0 !important;
+  font-weight: 600;
+  font-size: 16px;
+} 
 
 
