@@ -230,13 +230,13 @@ a .transparent:hover{
   font-weight: bold;
   margin-bottom: 40px;
 }
-.service .web-dev h4, .uiux-dev h4{
+.service .web-devs h4, .uiux-dev h4{
   font-size: 16px;
   color: #252323;
   font-weight: bold;
   margin-bottom: 20px;
 }
-.service .web-dev p, .uiux-dev p{
+.service .web-devs p, .uiux-dev p{
   font-size: 12px;
   color: #252323;
   font-weight: medium;
@@ -349,7 +349,7 @@ a .transparent:hover{
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  width: 300px;
+  width: 400px;
   height: 95px;
   background-color: #EFEFEF;
   z-index: -3;
@@ -379,5 +379,194 @@ a .transparent:hover{
   font-weight: 600;
   font-size: 16px;
 } 
+
+
+/* Project Pages */
+
+.landing-project{
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.landing-project .c-project{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.landing-project .left-text{
+  width: 492px;
+  font-size: 13px;
+  font-weight: medium;
+  text-align: justify;
+}
+.landing-project .left-text h1{
+  font-size: 36px;
+  font-weight: bold;
+  margin: 10px 0 15px;
+}
+.landing-project .right-project{
+  background: url("../images/bulet/b1.png") no-repeat center/cover;
+  position: relative;
+  padding: 0;
+  left: -20px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  z-index: -2;
+  animation: moveCircle 4s infinite linear;
+}
+.landing-project .right-project::after{
+  z-index: -1;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+  
+    /* Animasi */
+    animation: rotateMove 6s infinite linear;
+}
+.landing-project .wrapper{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.landing-project .hiasan{
+  position: absolute;
+  bottom: 30px;
+  left: 120px;
+  width: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.landing-project .hiasan2{
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  z-index: -3;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 95px;
+  background-color: #EFEFEF; 
+}
+.landing-project .hiasan3{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 110px;
+  height: 95px;
+  background-color: #EFEFEF;
+  z-index: -3;
+}
+
+.web-dev{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.web-dev .left-text span{
+  margin: 0 !important;
+  font-size: 14px;
+}
+
+.web-dev .left-text h2{
+  margin: 0 !important;
+  padding: 10px 0;
+  font-weight: bold;
+  color: #252323;
+}
+
+.web-dev .left-text p{
+  font-size: 12px;
+  text-align: justify;
+}
+
+.web-dev a {
+  text-decoration: none;
+}
+
+.web-dev a .trans{
+  background-color: #ffffff !important;
+  padding: 8px 15px;
+  font-size: 11px;
+  color: #252323;
+  text-decoration: underline;
+}
+.web-dev a .trans:hover{
+  background-color: #717fde !important;
+  color: white;
+}
+
+.web-dev .hiasan{
+  position: absolute;
+  bottom: 30px;
+  right: 120px;
+  width: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.web-dev .hiasan2{
+  position: absolute;
+  top: 30%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 95px;
+  background-color: #EFEFEF;
+  z-index: -3;
+}
+.web-dev .hiasan3{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 110px;
+  height: 95px;
+  background-color: #EFEFEF;
+  z-index: -3;
+}
+
+
+.uiux-dev .hiasan{
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.uiux-dev .hiasan2{
+  position: absolute;
+  top: 30%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 95px;
+  background-color: #EFEFEF;
+  z-index: -3;
+}
+.uiux-dev .hiasan3{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 110px;
+  height: 95px;
+  background-color: #EFEFEF;
+  z-index: -3;
+}
+
 
 
