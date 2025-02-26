@@ -3,17 +3,133 @@
   padding: 0;
   font-family: "Poppins", sans-serif !important;
 }
-html{
+
+html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
+
+.back-to-top {
+  background: url("../images/bulet/b1.png") no-repeat center/cover;
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 15px;
+  right: 30px;
+  z-index: 6;
+  opacity: 0;
+  visibility: hidden;
+  /* Sembunyikan awalnya */
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  animation: spins 2s linear infinite;
+}
+
+@keyframes spins {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.back-to-top img {
+  width: 15px;
+  height: 15px;
+  /* margin-bottom: 2px; */
+  transform: rotate(180deg); /* Default mengarah ke bawah */
+  transition: transform 0.3s ease-in-out; /* Efek smooth */
+}
+
+.back-to-top:hover img {
+  transform: rotate(0deg); /* Saat hover, panah kembali ke atas */
+}
+
 .navbar {
   padding: 10px !important;
   max-height: 10vh;
+  position: relative;
 }
+
 .navbar-brand {
   font-size: 5rem;
   font-weight: 700;
   color: #252323;
+}
+
+.navbar .sidebar-nav {
+  position: fixed;
+  top: 0;
+  right: -320px;
+  z-index: 3;
+  width: 300px;
+  height: 100vh;
+  background-color: #ffffff;
+  box-shadow: 1px 4px 8.1px rgba(0, 0, 0, 0.25);
+  transition: right 0.4s ease-in-out;
+}
+
+.sidebar-nav.open {
+  right: 0;
+}
+
+.navbar .sidebar-nav .wrappers {
+  height: 100%;
+  position: relative;
+}
+
+.navbar .sidebar-nav .header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 39px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.navbar .sidebar-nav .navbar-nav {
+  text-align: right !important;
+  font-size: 13px;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  /* left: 50%; */
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.navbar .sidebar-nav .navbar-nav hr {
+  color: rgba(0, 0, 0, 0.25);
+  height: 3px;
+}
+
+.navbar .sidebar-nav .navbar-nav .nav-link {
+  color: #252323 !important;
+  padding: 15px 39px;
+}
+
+.navbar .sidebar-nav .navbar-nav .nav-link:hover {
+  color: #717fde !important;
+}
+
+.navbar .sidebar-nav .footer-nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  padding: 0 39px;
+  border-top: 2px solid rgba(0, 0, 0, 0.05);
 }
 
 .landing {
@@ -25,20 +141,24 @@ html{
 .landing .left-text {
   max-width: 305px;
 }
+
 .landing .left-text h1 {
   font-size: 48px;
   font-weight: 700;
   color: #252323;
 }
+
 .landing .right-text {
   width: 314px;
 }
+
 .landing .right-text p {
   font-size: 14px;
   font-weight: 600;
   color: #252323;
   text-align: justify;
 }
+
 .landing .images {
   position: relative;
   padding: 0;
@@ -51,11 +171,12 @@ html{
   z-index: -2;
   animation: moveCircle 4s infinite linear;
 }
+
 .landing .images img {
   opacity: 0;
 }
 
-.landing .hiasan{
+.landing .hiasan {
   position: absolute;
   bottom: 30px;
   left: 0;
@@ -64,78 +185,84 @@ html{
   align-items: center;
   justify-content: space-between;
 }
-.hiasan .box{
+
+.hiasan .box {
   width: 48px;
   height: 16px;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   border-radius: 10px;
 }
 
-.landing .sosmed{
+.landing .sosmed {
   position: absolute;
   bottom: 30px;
   right: 0;
   width: 158px;
 }
 
-.about{
+.about {
   height: 100vh;
   display: flex;
   align-items: center;
   position: relative;
 }
-.about .c-about{
+
+.about .c-about {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.about .left-text-about{
+.about .left-text-about {
   max-width: 470px;
   text-align: justify;
 }
-.about .left-text-about h2{
+
+.about .left-text-about h2 {
   font-weight: bold;
   font-size: 32px;
   margin: 0;
 }
-.about .left-text-about h6{
+
+.about .left-text-about h6 {
   font-weight: medium;
   font-size: 16px;
   margin: 10px 0;
 }
-.about .left-text-about p{
+
+.about .left-text-about p {
   font-weight: medium;
   font-size: 12px;
 }
 
-.about .left-text-about a{
+.about .left-text-about a {
   color: white;
   font-size: 11px;
   text-decoration: none;
   padding: 0 !important;
 }
 
-a .btn{
-  background-color: #929CDD !important;
+a .btn {
+  background-color: #929cdd !important;
   padding: 8px 15px;
   font-size: 11px;
   color: white;
 }
 
-a .btn:hover{
+a .btn:hover {
   background-color: #717fde !important;
   color: white;
 }
 
-.about .left-text-about a .transparent{
+.about .left-text-about a .transparent {
   background-color: #ffffff !important;
   padding: 8px 15px;
   font-size: 11px;
   color: #252323;
   text-decoration: underline;
 }
-a .transparent:hover{
+
+a .transparent:hover {
   background-color: #717fde !important;
   color: white;
 }
@@ -163,7 +290,7 @@ a .transparent:hover{
    animation: rotateMove 6s infinite linear; 
 }
 */
-.about .right-about::after{
+.about .right-about::after {
   content: "";
   position: absolute;
   top: 51%;
@@ -176,10 +303,9 @@ a .transparent:hover{
   background-size: cover;
   height: 400px;
   width: 400px;
-  
 }
 
-.about .right-about .logo{
+.about .right-about .logo {
   position: absolute;
   left: 55px;
   top: 50%;
@@ -187,7 +313,8 @@ a .transparent:hover{
   font-size: 20px;
   font-weight: 700;
 }
-.about .hiasan{
+
+.about .hiasan {
   position: absolute;
   bottom: 30px;
   left: 50%;
@@ -197,58 +324,65 @@ a .transparent:hover{
   align-items: center;
   justify-content: space-between;
 }
-.about .hiasan2{
+
+.about .hiasan2 {
   position: absolute;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
   width: 350px;
   height: 95px;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   z-index: -3;
 }
-.about .hiasan3{
+
+.about .hiasan3 {
   position: absolute;
   top: 70px;
   left: 0;
   width: 116px;
   height: 95px;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   z-index: -3;
 }
 
-.service{
+.service {
   height: 100vh;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
   position: relative;
 }
-.service h2{
+
+.service h2 {
   font-size: 32px;
   color: #252323;
   font-weight: bold;
   margin-bottom: 40px;
 }
-.service .web-devs h4, .uiux-dev h4{
+
+.service .web-devs h4,
+.uiux-dev h4 {
   font-size: 16px;
   color: #252323;
   font-weight: bold;
   margin-bottom: 20px;
 }
-.service .web-devs p, .uiux-dev p{
+
+.service .web-devs p,
+.uiux-dev p {
   font-size: 12px;
   color: #252323;
   font-weight: medium;
   text-align: justify;
 }
 
-.service .wrapper{
+.service .wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.service .hiasan{
+.service .hiasan {
   position: absolute;
   bottom: 30px;
   right: 120px;
@@ -257,39 +391,42 @@ a .transparent:hover{
   align-items: center;
   justify-content: space-between;
 }
-.service .hiasan2{
+
+.service .hiasan2 {
   position: absolute;
   top: 30%;
   right: 0;
   transform: translateY(-50%);
   width: 100px;
   height: 95px;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   z-index: -3;
 }
-.service .hiasan3{
+
+.service .hiasan3 {
   position: absolute;
   bottom: 70px;
   left: 0;
   width: 116px;
   height: 95px;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   z-index: -3;
 }
 
-.contact{
+.contact {
   height: 90vh;
   position: relative;
   display: flex;
   align-items: center;
 }
-.contact .c-contact{
+
+.contact .c-contact {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.contact .left-contact{
+.contact .left-contact {
   background: url("../images/bulet/b2.png") no-repeat center/cover;
   height: 429px;
   width: 429px;
@@ -297,35 +434,39 @@ a .transparent:hover{
   position: relative;
   z-index: -1;
 }
-.contact .left-contact::after{
- content: "";
- position: absolute;
- background-color: white;
- top: 50%;
- right: -50%;
- transform: translate(-50%, -50%);
- z-index: -1;
- width: 245px;
- height: 259px;
- border-radius: 50%;
- animation: rotateMove 6s infinite linear;
+
+.contact .left-contact::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  top: 50%;
+  right: -50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  width: 245px;
+  height: 259px;
+  border-radius: 50%;
+  animation: rotateMove 6s infinite linear;
 }
 
-.contact .right-text-contact{
+.contact .right-text-contact {
   width: 400px;
   position: relative;
   left: -70px;
 }
-.contact .right-text-contact h2{
+
+.contact .right-text-contact h2 {
   font-weight: bold;
   font-size: 36px;
   margin-bottom: 15px;
 }
-.contact .right-text-contact h6{
+
+.contact .right-text-contact h6 {
   font-weight: medium;
   font-size: 16px;
 }
-.contact .hiasan{
+
+.contact .hiasan {
   position: absolute;
   bottom: 30px;
   right: 120px;
@@ -334,78 +475,80 @@ a .transparent:hover{
   align-items: center;
   justify-content: space-between;
 }
-.contact .hiasan2{
+
+.contact .hiasan2 {
   position: absolute;
   top: 30%;
   right: 0;
   transform: translateY(-50%);
   width: 100px;
   height: 95px;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   z-index: -3;
 }
-.contact .hiasan3{
+
+.contact .hiasan3 {
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
   width: 400px;
   height: 95px;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   z-index: -3;
 }
 
-
-
-
-
-
-.footer{
-  height: 10vh;
-  background-color: #929CDD;
+.footer {
+  height: 89px;
+  background-color: #929cdd;
   display: flex;
   align-items: center;
   color: white;
 }
 
-.footer .c-footer{
+.footer .c-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-} 
-.footer .left-footer span{
+}
+
+.footer .left-footer span {
   margin: 0 !important;
   padding: 0 !important;
   font-weight: 600;
   font-size: 16px;
-} 
-
+}
 
 /* Project Pages */
 
-.landing-project{
+.landing-project {
   height: 90vh;
   display: flex;
   align-items: center;
   position: relative;
 }
-.landing-project .c-project{
+
+.landing-project .c-project {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.landing-project .left-text{
+
+.landing-project .left-text {
   width: 492px;
   font-size: 13px;
   font-weight: medium;
   text-align: justify;
+  margin-bottom: 34px;
 }
-.landing-project .left-text h1{
+
+.landing-project .left-text h1 {
   font-size: 36px;
   font-weight: bold;
   margin: 10px 0 15px;
 }
-.landing-project .right-project{
+
+.landing-project .right-project {
   background: url("../images/bulet/b1.png") no-repeat center/cover;
   position: relative;
   padding: 0;
@@ -416,28 +559,30 @@ a .transparent:hover{
   z-index: -2;
   animation: moveCircle 4s infinite linear;
 }
-.landing-project .right-project::after{
+
+.landing-project .right-project::after {
   z-index: -1;
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    background: rgb(255, 255, 255);
-    transform: translate(-50%, -50%);
-  
-    /* Animasi */
-    animation: rotateMove 6s infinite linear;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  transform: translate(-50%, -50%);
+
+  /* Animasi */
+  animation: rotateMove 6s infinite linear;
 }
-.landing-project .wrapper{
+
+.landing-project .wrapper {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
 }
 
-.landing-project .hiasan{
+.landing-project .hiasan {
   position: absolute;
   bottom: 30px;
   left: 120px;
@@ -446,7 +591,8 @@ a .transparent:hover{
   align-items: center;
   justify-content: space-between;
 }
-.landing-project .hiasan2{
+
+.landing-project .hiasan2 {
   position: absolute;
   top: 50%;
   right: 0px;
@@ -454,38 +600,40 @@ a .transparent:hover{
   transform: translateY(-50%);
   width: 300px;
   height: 95px;
-  background-color: #EFEFEF; 
+  background-color: #efefef;
 }
-.landing-project .hiasan3{
+
+.landing-project .hiasan3 {
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
   width: 110px;
   height: 95px;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   z-index: -3;
 }
 
-.web-dev{
+.web-dev {
   height: 100vh;
   display: flex;
   align-items: center;
   position: relative;
 }
-.web-dev .left-text span{
+
+.web-dev .left-text span {
   margin: 0 !important;
   font-size: 14px;
 }
 
-.web-dev .left-text h2{
+.web-dev .left-text h2 {
   margin: 0 !important;
   padding: 10px 0;
   font-weight: bold;
   color: #252323;
 }
 
-.web-dev .left-text p{
+.web-dev .left-text p {
   font-size: 12px;
   text-align: justify;
 }
@@ -494,19 +642,20 @@ a .transparent:hover{
   text-decoration: none;
 }
 
-.web-dev a .trans{
+.web-dev a .trans {
   background-color: #ffffff !important;
   padding: 8px 15px;
   font-size: 11px;
   color: #252323;
   text-decoration: underline;
 }
-.web-dev a .trans:hover{
+
+.web-dev a .trans:hover {
   background-color: #717fde !important;
   color: white;
 }
 
-.web-dev .hiasan{
+.web-dev .hiasan {
   position: absolute;
   bottom: 30px;
   right: 120px;
@@ -515,29 +664,30 @@ a .transparent:hover{
   align-items: center;
   justify-content: space-between;
 }
-.web-dev .hiasan2{
+
+.web-dev .hiasan2 {
   position: absolute;
   top: 30%;
   right: 0;
   transform: translateY(-50%);
   width: 100px;
   height: 95px;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   z-index: -3;
 }
-.web-dev .hiasan3{
+
+.web-dev .hiasan3 {
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
   width: 110px;
   height: 95px;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   z-index: -3;
 }
 
-
-.uiux-dev .hiasan{
+.uiux-dev .hiasan {
   position: absolute;
   bottom: 30px;
   left: 50%;
@@ -547,26 +697,25 @@ a .transparent:hover{
   align-items: center;
   justify-content: space-between;
 }
-.uiux-dev .hiasan2{
+
+.uiux-dev .hiasan2 {
   position: absolute;
   top: 30%;
   right: 0;
   transform: translateY(-50%);
   width: 100px;
   height: 95px;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   z-index: -3;
 }
-.uiux-dev .hiasan3{
+
+.uiux-dev .hiasan3 {
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
   width: 110px;
   height: 95px;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   z-index: -3;
 }
-
-
-

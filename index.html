@@ -1,209 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Portfel.</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="images/bulet/icons.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/animations.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="container">
-        <a class="navbar-brand" href="#">Portfel.</a>
-        <img src="images/icons/nav/menu.svg" alt="" srcset="" />
 
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+<head>
+  <title>Portfel.</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="images/bulet/icons.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+
+<body>
+  <a href="#" class="back-to-top">
+    <img src="images/icons/nav/top.svg" alt="" srcset="">
+  </a>
+  <nav class="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">Portfel.</a>
+      <!-- <button id="toggleSidebar">Toggle Sidebar</button> -->
+      <img id="toggleSidebar" src="images/icons/nav/menu.svg" alt="" srcset="" />
+
+      <div class="sidebar-nav">
+        <div class="wrappers">
+          <div class="header-nav">
+            <span>Portfel.</span>
+            <img id="closeSidebar" src="images/icons/nav/x.svg" alt="Close Sidebar" />
+          </div>
+
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Home</a>
             </li>
+            <hr>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">About me</a>
             </li>
+            <hr>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">My service</a>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact me</a>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My project</a>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Certificate</a>
             </li>
           </ul>
+
+          <div class="footer-nav">
+            <div class="sosmed">
+              <img src="images/icons/sosmed/sos (1).png" alt="" />
+              <img src="images/icons/sosmed/sos (2).png" alt="" />
+              <img src="images/icons/sosmed/sos (3).png" alt="" />
+              <img src="images/icons/sosmed/sos (4).png" alt="" />
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
+  </nav>
 
-    <div class="container landing d-flex align-items-center">
-      <div class="left-text">
-        <h1 id="myname">Hi, I'm Ilham Ramadan</h1>
-      </div>
-      <div class="images">
-        <!-- <img src="images/image.png" alt="" class="img-fluid" /> -->
-      </div>
-      <div class="right-text">
-        <p>
-          I'm a web developer and UI/UX enthusiast based in Indonesia. I have a
-          passion for web development and love creating seamless and engaging
-          experiences for web and mobile devices.
+  <div class="container landing d-flex align-items-center" id="landing">
+    <div class="left-text">
+      <h1 id="myname">Hi, I'm Ilham Ramadan</h1>
+    </div>
+    <div class="images">
+      <!-- <img src="images/image.png" alt="" class="img-fluid" /> -->
+    </div>
+    <div class="right-text">
+      <p>
+        I'm a web developer and UI/UX enthusiast based in Indonesia. I have a
+        passion for web development and love creating seamless and engaging
+        experiences for web and mobile devices.
+      </p>
+    </div>
+    <div class="hiasan">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="sosmed">
+      <img src="images/icons/sosmed/sos (1).png" alt="" />
+      <img src="images/icons/sosmed/sos (2).png" alt="" />
+      <img src="images/icons/sosmed/sos (3).png" alt="" />
+      <img src="images/icons/sosmed/sos (4).png" alt="" />
+    </div>
+  </div>
+
+  <section class="about" id="about">
+    <div class="container c-about">
+      <div class="left-text-about">
+        <h2 data-aos="fade-down" data-aos-duration="800">So, who i am?</h2>
+        <h6 data-aos="fade-down" data-aos-duration="800">im Web Developer & UI/UX Design</h6>
+        <p data-aos="fade-down" data-aos-duration="800">
+          I am a Software Engineering graduate and an active 6th-semester
+          student at Universitas Bina Sarana Informatika, based in Cibinong,
+          Indonesia. My passion for coding started in 2019, focusing on web
+          development and UI/UX design. Since then, I have built various
+          projects, creating functional and visually appealing digital
+          experiences.
         </p>
+        <a href="#contact">
+          <div class="btn" data-aos="fade-right" data-aos-duration="800">Contact me</div>
+        </a>
+        <a href="page/project.html">
+          <div class="btn transparent ms-1" data-aos="fade-left" data-aos-duration="800">See project</div>
+        </a>
+      </div>
+      <div class="right-about" data-aos="fade-left" data-aos-duration="800">
+        <!-- <div class="logo">Portfel.</div> -->
       </div>
       <div class="hiasan">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box" data-aos="fade-right" data-aos-duration="800"></div>
+        <div class="box" data-aos="fade" data-aos-duration="800"></div>
+        <div class="box" data-aos="fade-left" data-aos-duration="800"></div>
       </div>
-      <div class="sosmed">
-        <img src="images/icons/sosmed/sos (1).png" alt="" />
-        <img src="images/icons/sosmed/sos (2).png" alt="" />
-        <img src="images/icons/sosmed/sos (3).png" alt="" />
-        <img src="images/icons/sosmed/sos (4).png" alt="" />
+      <div class="hiasan2"></div>
+      <div class="hiasan3" data-aos="fade-right" data-aos-duration="600"></div>
+    </div>
+  </section>
+
+  <section class="service" id="service">
+    <div class="container c-service">
+      <div class="row m-0">
+        <div class="col-lg-5 mx-auto">
+          <h2>Service</h2>
+        </div>
+        <div class="col-lg-5 mx-auto"></div>
+      </div>
+      <div class="row m-0">
+        <div class="web-devs col-lg-5 mx-auto">
+          <h4>Web Development</h4>
+          <p>
+            I specialize in building dynamic and responsive websites using modern web technologies. With experience in
+            both front-end and back-end development, I create seamless, user-friendly, and efficient web solutions
+            tailored to various needs. My expertise includes working with frameworks, databases, and APIs to deliver
+            high-quality digital experiences.
+          </p>
+          <div class="wrapper">
+            <a href="page/project.html#webdev">
+              <div class="btn">See project</div>
+            </a>
+            <div class="icon">
+              <img src="images/icons/tools/web/web (1).svg" alt="" srcset="">
+              <img src="images/icons/tools/web/web (2).svg" alt="" srcset="">
+              <img src="images/icons/tools/web/web (3).svg" alt="" srcset="">
+              <img src="images/icons/tools/web/web (4).svg" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+        <div class="uiux-dev col-lg-5 mx-auto">
+          <h4>UI/UX Design</h4>
+          <p>
+            I am passionate about creating intuitive and visually appealing user experiences. By combining design
+            principles with usability best practices, I craft interfaces that are not only aesthetically pleasing but
+            also functional and user-friendly. My approach focuses on enhancing user engagement through thoughtful
+            design and seamless interaction.
+          </p>
+          <div class="wrapper">
+            <a href="page/project.html#uiux">
+              <div class="btn">See project</div>
+            </a>
+            <div class="icon">
+              <img src="images/icons/tools/uiux/ui (1).svg" alt="" srcset="">
+              <img src="images/icons/tools/uiux/ui (2).svg" alt="" srcset="">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="hiasan">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="hiasan2"></div>
+    <div class="hiasan3"></div>
+  </section>
 
-    <section class="about" id="about">
-      <div class="container c-about">
-        <div class="left-text-about">
-          <h2 data-aos="fade-down" data-aos-duration="800">So, who i am?</h2>
-          <h6 data-aos="fade-down" data-aos-duration="800">im Web Developer & UI/UX Design</h6>
-          <p data-aos="fade-down" data-aos-duration="800">
-            I am a Software Engineering graduate and an active 6th-semester
-            student at Universitas Bina Sarana Informatika, based in Cibinong,
-            Indonesia. My passion for coding started in 2019, focusing on web
-            development and UI/UX design. Since then, I have built various
-            projects, creating functional and visually appealing digital
-            experiences.
-          </p>
-          <a href="#contact" >
-            <div class="btn" data-aos="fade-right" data-aos-duration="800">Contact me</div>
-          </a>
-          <a href="page/project.html">
-            <div class="btn transparent ms-1" data-aos="fade-left" data-aos-duration="800">See project</div>
-          </a>
-        </div>
-        <div class="right-about" data-aos="fade-left" data-aos-duration="800">
-          <!-- <div class="logo">Portfel.</div> -->
-        </div>
-        <div class="hiasan">
-          <div class="box" data-aos="fade-right" data-aos-duration="800"></div>
-          <div class="box" data-aos="fade" data-aos-duration="800"></div>
-          <div class="box" data-aos="fade-left" data-aos-duration="800"></div>
-        </div>
-        <div class="hiasan2"></div>
-        <div class="hiasan3" data-aos="fade-right" data-aos-duration="600"></div>
-      </div>
-    </section>
+  <section class="contact" id="contact">
+    <div class="container c-contact">
+      <div class="left-contact">
 
-    <section class="service" id="service">
-      <div class="container c-service">
-        <div class="row m-0">
-          <div class="col-lg-5 mx-auto">
-            <h2>Service</h2>
-          </div>
-          <div class="col-lg-5 mx-auto"></div>
-        </div>
-        <div class="row m-0">
-          <div class="web-devs col-lg-5 mx-auto">
-            <h4>Web Development</h4>
-            <p>
-              I specialize in building dynamic and responsive websites using modern web technologies. With experience in both front-end and back-end development, I create seamless, user-friendly, and efficient web solutions tailored to various needs. My expertise includes working with frameworks, databases, and APIs to deliver high-quality digital experiences.
-            </p>
-            <div class="wrapper">
-              <a href="page/project.html#webdev">
-                <div class="btn">See project</div>
-              </a>
-              <div class="icon">
-                <img src="images/icons/tools/web/web (1).svg" alt="" srcset="">
-                <img src="images/icons/tools/web/web (2).svg" alt="" srcset="">
-                <img src="images/icons/tools/web/web (3).svg" alt="" srcset="">
-                <img src="images/icons/tools/web/web (4).svg" alt="" srcset="">
-              </div>
-            </div>
-          </div>
-          <div class="uiux-dev col-lg-5 mx-auto">
-            <h4>UI/UX Design</h4>
-            <p>
-              I am passionate about creating intuitive and visually appealing user experiences. By combining design principles with usability best practices, I craft interfaces that are not only aesthetically pleasing but also functional and user-friendly. My approach focuses on enhancing user engagement through thoughtful design and seamless interaction.
-            </p>
-            <div class="wrapper">
-              <a href="page/project.html#uiux">
-                <div class="btn">See project</div>
-              </a>
-              <div class="icon">
-                <img src="images/icons/tools/uiux/ui (1).svg" alt="" srcset="">
-                <img src="images/icons/tools/uiux/ui (2).svg" alt="" srcset="">
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-      <div class="hiasan">
-        <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
+      <div class="right-text-contact">
+        <h2>Lets talk about everything</h2>
+        <h6>ilhamramadangm32@gmail.com</h6>
+        <h6>(+62) 895 3016 4170</h6>
       </div>
-      <div class="hiasan2"></div>
-      <div class="hiasan3"></div>
-    </section>
+    </div>
+    <div class="hiasan">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="hiasan2"></div>
+    <div class="hiasan3"></div>
+  </section>
 
-    <section class="contact" id="contact">
-      <div class="container c-contact">
-        <div class="left-contact">
+  <section class="footer">
+    <div class="container c-footer">
+      <div class="left-footer">
+        <span>
+          © 2025 Portfel. By Ilham Ramadan.
+        </span>
+      </div>
+      <div class="right-footer">
+        <div class="sosmed">
+          <img src="images/icons/sosmed/sos (1).png" alt="" />
+          <img src="images/icons/sosmed/sos (2).png" alt="" />
+          <img src="images/icons/sosmed/sos (3).png" alt="" />
+          <img src="images/icons/sosmed/sos (4).png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrambleTextPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sidebar = document.querySelector(".sidebar-nav");
+      const toggleButton = document.getElementById("toggleSidebar");
+      const closeButton = document.querySelector(".header-nav img");
 
-        </div>
-        <div class="right-text-contact">
-          <h2>Lets talk about everything</h2>
-          <h6>ilhamramadangm32@gmail.com</h6>
-          <h6>(+62) 895 3016 4170</h6>
-        </div>
-      </div>
-      <div class="hiasan">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-      </div>
-      <div class="hiasan2"></div>
-      <div class="hiasan3"></div>
-    </section>
-
-    <section class="footer">
-      <div class="container c-footer">
-        <div class="left-footer">
-          <span>
-            © 2025 Portfel. By Ilham Ramadan.
-          </span>
-        </div>
-        <div class="right-footer">
-          <div class="sosmed">
-            <img src="images/icons/sosmed/sos (1).png" alt="" />
-            <img src="images/icons/sosmed/sos (2).png" alt="" />
-            <img src="images/icons/sosmed/sos (3).png" alt="" />
-            <img src="images/icons/sosmed/sos (4).png" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrambleTextPlugin.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      gsap.to("#myname", {
-        duration: 2,
-        scrambleText: "Hi, I'm Ilham Ramadan",
-        chars: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",
-        speed: 0.3,
+      toggleButton.addEventListener("click", function () {
+        sidebar.classList.toggle("open");
       });
-    </script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+
+      closeButton.addEventListener("click", function () {
+        sidebar.classList.remove("open");
+      });
+    });
+
+  </script>
+  <script>
+    gsap.to("#myname", {
+      duration: 2,
+      scrambleText: "Hi, I'm Ilham Ramadan",
+      chars: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",
+      speed: 0.3,
+    });
+  </script>
+  <script>
+    AOS.init();
+
+    //       document.addEventListener('DOMContentLoaded', function() {
+    //     AOS.init({
+    //         once: true, // whether animation should happen only once - while scrolling down
+    //     });
+    // });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const backToTop = document.querySelector(".back-to-top");
+      const landingSection = document.querySelector("#landing");
+
+      const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          backToTop.style.opacity = "0";
+          backToTop.style.visibility = "hidden";
+        } else {
+          backToTop.style.opacity = "1";
+          backToTop.style.visibility = "visible";
+        }
+      }, { threshold: 1 }); // Hilang jika 30% dari #landing terlihat
+
+      if (landingSection) {
+        observer.observe(landingSection);
+      }
+    });
+  </script>
+</body>
+
 </html>
