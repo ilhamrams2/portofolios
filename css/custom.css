@@ -9,6 +9,13 @@ html {
   overflow-x: hidden;
 }
 
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
 .back-to-top {
   background: url("../images/bulet/b1.png") no-repeat center/cover;
   color: white;
@@ -26,28 +33,21 @@ html {
   visibility: hidden;
   /* Sembunyikan awalnya */
   transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
-  animation: spins 2s linear infinite;
-}
-
-@keyframes spins {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .back-to-top img {
   width: 15px;
   height: 15px;
   /* margin-bottom: 2px; */
-  transform: rotate(180deg); /* Default mengarah ke bawah */
-  transition: transform 0.3s ease-in-out; /* Efek smooth */
+  transform: rotate(180deg);
+  /* Default mengarah ke bawah */
+  transition: transform 0.3s ease-in-out;
+  /* Efek smooth */
 }
 
 .back-to-top:hover img {
-  transform: rotate(0deg); /* Saat hover, panah kembali ke atas */
+  transform: rotate(0deg);
+  /* Saat hover, panah kembali ke atas */
 }
 
 .navbar {
@@ -59,8 +59,19 @@ html {
 .navbar-brand {
   font-size: 5rem;
   font-weight: 700;
-  color: #252323;
+  /* color: #252323; */
 }
+
+#toggleSidebar {
+  cursor: pointer;
+  transition: scale 0.3s ease-in-out;
+  scale: 1;
+}
+
+#toggleSidebar:hover {
+  scale: 1.1;
+}
+
 
 .navbar .sidebar-nav {
   position: fixed;
@@ -70,7 +81,7 @@ html {
   width: 300px;
   height: 100vh;
   background-color: #ffffff;
-  box-shadow: 1px 4px 8.1px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 4px 8.1px rgba(0, 0, 0, 0.15);
   transition: right 0.4s ease-in-out;
 }
 
@@ -90,8 +101,33 @@ html {
   height: 70px;
   padding: 0 39px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+.navbar .sidebar-nav .header-nav span {
+  background: linear-gradient(90deg, #97A0DF, #FCA496, #97A0DF);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 5s ease infinite;
+  font-size: 17px;
   font-weight: bold;
-  font-size: 14px;
+}
+
+/* @keyframes gradientMove {
+  0% { background-position: 0% 10%; }
+  100% { background-position: 100% 0%; }
+} */
+
+.navbar .sidebar-nav .header-nav img {
+  transform: rotate(45deg);
+  /* Mulai dari posisi '+' */
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.navbar .sidebar-nav .header-nav img:hover {
+  transform: scale(1.2) rotate(90deg);
+  /* Berputar menjadi '×' */
 }
 
 .navbar .sidebar-nav .navbar-nav {
@@ -111,14 +147,56 @@ html {
   height: 3px;
 }
 
-.navbar .sidebar-nav .navbar-nav .nav-link {
-  color: #252323 !important;
-  padding: 15px 39px;
+.navbar .sidebar-nav .navbar-nav .nav-item {
+  position: relative;
 }
 
-.navbar .sidebar-nav .navbar-nav .nav-link:hover {
-  color: #717fde !important;
+.navbar .sidebar-nav .navbar-nav .nav-item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 39px;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: url("../images/bulet/b1.png") no-repeat center/cover;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  animation: spin 4s linear infinite;
 }
+
+.navbar .sidebar-nav .navbar-nav .nav-item:hover::after {
+  opacity: 1;
+}
+
+@keyframes spin {
+  from {
+    transform: translateY(-50%) rotate(0deg) scale(1.3);
+  }
+
+  to {
+    transform: translateY(-50%) rotate(360deg) scale(1.3);
+  }
+}
+
+.navbar .sidebar-nav .navbar-nav .nav-link {
+  color: #252323 !important;
+  padding: 5px 39px;
+  position: relative;
+}
+
+
+.navbar .sidebar-nav .navbar-nav .nav-link:hover {
+  background: linear-gradient(45deg, #97A0DF, #FCA496, #97A0DF);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 1.5s ease-in-out infinite;
+}
+
+
 
 .navbar .sidebar-nav .footer-nav {
   position: absolute;
