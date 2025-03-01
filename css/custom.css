@@ -214,10 +214,7 @@ body{
 }
 
 @media (max-width: 768px) {
-  .navbar{
-    position: fixed !important;
-    width: 100%;
-  }
+
 }
 
 
