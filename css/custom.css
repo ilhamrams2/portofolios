@@ -215,7 +215,8 @@ body{
 
 @media (max-width: 768px) {
   .navbar{
-    position: fixed;
+    position: fixed !important;
+    width: 100%;
   }
 }
 
@@ -307,6 +308,7 @@ body{
     display: flex !important;
     flex-direction: column;
     justify-content: space-evenly;
+    height: 100vh;
   }
 
   .landing .left-text h1 {
