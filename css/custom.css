@@ -8,6 +8,9 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+body{
+  min-width: 340px;
+}
 
 @keyframes gradientMove {
   0% {
@@ -250,8 +253,10 @@ html {
   left: -25px;
   width: 450px;
   height: 450px;
-  background-image: url("../images/bulet/b1.png");
-  object-fit: cover;
+  background: url("../images/bulet/b1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 50%;
   z-index: -2;
   animation: moveCircle 4s infinite linear;
@@ -339,16 +344,32 @@ html {
 }
 
 @media (min-width: 768px) and ( max-width: 991.8px) {
-  .landing {
-    flex-direction: column;
+  .landing{
+    display: flex;
+    justify-content: space-between;
   }
-
   .landing .images {
-    width: 50%;
-    height: 50%;
+    width: 250px;
+    height: 250px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .landing .images::after {
+    width: 80% !important;
+    height: 80% !important;
+  }
+  .left-text{
+    width: 190px !important;
+  }
+  .left-text h1{
+    font-size: 30px !important;
+  }
+  .right-text{
+    width: 190px !important;
+  }
+  .right-text p{
+    font-size: 12px !important;
   }
 }
 
@@ -363,6 +384,10 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .landing .images::after {
+    width: 80% !important;
+    height: 80% !important;
   }
 }
 
