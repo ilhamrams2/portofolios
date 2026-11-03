@@ -1,0 +1,348 @@
+{
+  "navbar": {
+    "brand": "Portfel.",
+    "brandHref": "#landing",
+    "menu": [
+      { "label": "Home", "href": "#landing", "active": true },
+      { "label": "tech stack", "href": "#tech-stack", "active": false },
+      { "label": "profile", "href": "#about", "active": false },
+      { "label": "services", "href": "#service", "active": false },
+      { "label": "project", "href": "#projects", "active": false },
+      { "label": "certificates", "href": "page/503.html", "active": false }
+    ],
+    "contactBtn": {
+      "label": "contact me",
+      "href": "#contact"
+    },
+    "socials": [
+      { "icon": "images/icons/sosmed/sos (1).png", "alt": "Instagram" },
+      { "icon": "images/icons/sosmed/sos (2).png", "alt": "Facebook" },
+      { "icon": "images/icons/sosmed/sos (3).png", "alt": "LinkedIn" },
+      { "icon": "images/icons/sosmed/sos (4).png", "alt": "GitHub" }
+    ]
+  },
+  "hero": {
+    "greeting": "Hello I'm",
+    "name": "Ilham Ramadan",
+    "title": "Building Digital<br />Solutions.",
+    "description": "Software Engineering graduate with professional experience in web development, UI/UX design, and educational technology using Laravel, PHP, Next.js, Tailwind CSS, and WordPress.",
+    "primaryCta": {
+      "label": "Explore My Work",
+      "href": "#projects"
+    },
+    "secondaryCta": {
+      "label": "Get In Touch",
+      "href": "#contact"
+    },
+    "image": {
+      "src": "images/hero-new.png",
+      "alt": "Ilham Ramadan - Web Developer, UI/UX, WordPress Developer"
+    }
+  },
+  "techStack": {
+    "eyebrow": "Tech Stack",
+    "heading": "Core Technologies & Tools",
+    "subtitle": "The core technologies and tools I use to build institutional websites, web-based systems, and user-friendly digital solutions.",
+    "primaryBadge": "Primary Stack : Laravel + Next.js + Tailwind + MySQL",
+    "categories": [
+      {
+        "title": "Backend & Web Development",
+        "description": "Building robust server-side applications, CMS, and REST APIs",
+        "items": [
+          "Laravel & Filament",
+          "PHP 8.x",
+          "MySQL",
+          "REST API Development",
+          "WordPress & Elementor"
+        ]
+      },
+      {
+        "title": "Frontend & Mobile",
+        "description": "Clean, responsive & interactive user interfaces",
+        "items": [
+          "Next.js & JavaScript",
+          "Tailwind CSS",
+          "Bootstrap 5",
+          "HTML5 & CSS3",
+          "Flutter & Dart"
+        ]
+      },
+      {
+        "title": "UI/UX, Workflow & Tools",
+        "description": "Prototyping, version control, testing & server management",
+        "items": [
+          "Figma & Canva (UI/UX)",
+          "Git & GitHub",
+          "Postman",
+          "Web Hosting, Domain & Email",
+          "Problem Solving & Mentoring"
+        ]
+      }
+    ]
+  },
+  "profile": {
+    "eyebrow": "Profile",
+    "heading": "About Me & Journey.",
+    "subtitle": "Software Engineering graduate (GPA 3.89/4.00) with professional experience in web development, UI/UX design, WordPress development, and educational technology.",
+    "bioCard": {
+      "statusBadge": "Based in Bogor, Indonesia \u2022 Open for Projects",
+      "title": "Web Developer, UI/UX & WordPress Developer",
+      "paragraphs": [
+        "Software Engineering graduate with professional experience in web development, UI/UX design, and educational technology. Experienced in developing institutional websites and web-based systems using <strong>Laravel, PHP, JavaScript, Next.js, Tailwind CSS, and MySQL</strong>.",
+        "Also experienced in UI/UX prototyping in Figma, WordPress development, and mentoring students in programming and software projects. Passionate about building user-friendly, scalable, and impactful digital solutions."
+      ],
+      "specialtyLabel": "Role & Specialization",
+      "specialtyRole": "Web Developer \u2022 UI/UX \u2022 WordPress Developer",
+      "cta": {
+        "label": "Request CV / Resume",
+        "href": "#contact"
+      }
+    },
+    "stats": [
+      {
+        "number": "3.89",
+        "title": "GPA / 4.00",
+        "subtitle": "B.S. Software Engineering"
+      },
+      {
+        "number": "1st",
+        "title": "Bootcamp Winner",
+        "subtitle": "Web Dev Bootcamp 2024"
+      },
+      {
+        "number": "6+",
+        "title": "Featured Projects",
+        "subtitle": "School, Web App & Portals"
+      },
+      {
+        "number": "BNSP",
+        "title": "Certified Analyst",
+        "subtitle": "Program Analyst (2025-2028)"
+      }
+    ],
+    "timelineHeader": {
+      "heading": "Experience, Education & Certifications",
+      "subtitle": "Professional career history, academic background & certifications"
+    },
+    "timelineItems": [
+      {
+        "period": "Jul 2025 - Now",
+        "type": "Full-Time / Education",
+        "title": "Laboratory Instructor",
+        "organization": "SMK Prestasi Prima",
+        "description": "Developed & maintained 3 institutional websites (SMA, SMK, Polytechnic) using Laravel, Tailwind CSS, and Next.js. Built OrensPro extracurricular attendance system with QR Code & GPS verification, managed hosting/domains/email systems, and mentored PPLG students.",
+        "tags": ["Laravel", "Next.js", "Tailwind CSS", "QR & GPS System", "Mentoring"],
+        "active": true
+      },
+      {
+        "period": "Mei 2025 - Jun 2025",
+        "type": "Freelance",
+        "title": "UI/UX Designer",
+        "organization": "Labsco Arena Technology (Freelance)",
+        "description": "Designed UI/UX interfaces to improve usability and user experience. Created wireframes, prototypes, and mockups using Figma for the Labsco Arena Teknologi company profile website.",
+        "tags": ["Figma", "UI/UX Design", "Wireframing", "Prototyping"],
+        "active": false
+      },
+      {
+        "period": "April 2025 - May 2025",
+        "type": "Freelance",
+        "title": "WordPress Developer",
+        "organization": "PT Adisher Kreasi Indonesia (Freelance)",
+        "description": "Developed a responsive company profile and retail website using WordPress and Elementor. Set up hosting environment for optimal performance & security, and configured company email with scheduled backups.",
+        "tags": ["WordPress", "Elementor", "Hosting & Security", "Company Email"],
+        "active": false
+      },
+      {
+        "period": "Jul 2024 - Nov 2024",
+        "type": "Freelance",
+        "title": "UI/UX & Frontend Developer",
+        "organization": "Labsco Arena Technology (Freelance)",
+        "description": "Designed user-friendly interfaces, wireframes, and prototypes, and collaborated with the team to develop responsive and interactive frontend components using HTML, Bootstrap, CSS, and JavaScript.",
+        "tags": ["HTML5 & CSS3", "Bootstrap", "JavaScript", "UI/UX"],
+        "active": false
+      },
+      {
+        "period": "Sep 2022 - Sep 2026",
+        "type": "Education & Certificates",
+        "title": "Bachelor of Software Engineering (GPA: 3.89/4.00)",
+        "organization": "University Bina Sarana Informatika (UBSI)",
+        "description": "1st Place Web Development Bootcamp 2024. Certified Program Analyst in Software Development by BNSP (Valid 2025-2028) & Certified PCAP: Programming Essentials in Python by Cisco Networking Academy (2023).",
+        "tags": ["GPA 3.89/4.00", "BNSP Program Analyst", "Cisco PCAP Python", "1st Place Bootcamp"],
+        "active": false
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Services",
+    "heading": "Digital Solutions I Provide.",
+    "subtitle": "Layanan pengembangan website institusi, sistem informasi berbasis web, desain UI/UX, hingga pengelolaan WordPress & server hosting.",
+    "items": [
+      {
+        "number": "01",
+        "brandTag": "Portfel. Service",
+        "title": "Institutional Website & Web System",
+        "description": "Pengembangan website resmi sekolah/kampus (SMA, SMK, Politeknik) dan sistem informasi berbasis web seperti sistem absensi QR Code & GPS, perpustakaan digital, hingga portal berita.",
+        "features": [
+          "QR Code Scanning & GPS Verification System",
+          "CMS Panel & Dashboard Admin (Laravel / Filament)",
+          "RESTful API & Mobile App Backend Integration"
+        ],
+        "techFooter": "Laravel \u2022 Next.js \u2022 Filament \u2022 MySQL",
+        "featuredDark": true
+      },
+      {
+        "number": "02",
+        "brandTag": "Portfel. Service",
+        "title": "UI/UX Design & Frontend Development",
+        "description": "Perancangan antarmuka pengguna (UI/UX) yang modern dan intuitif menggunakan Figma, mulai dari wireframe, mockup, prototipe interaktif, hingga implementasi kode frontend responsif.",
+        "features": [
+          "Wireframing, Mockups & Interactive Prototype di Figma",
+          "Usability Enhancement & Modern Visual System",
+          "Responsive Frontend (Tailwind CSS, Bootstrap 5, Next.js)"
+        ],
+        "techFooter": "Figma \u2022 Canva \u2022 Tailwind CSS \u2022 Bootstrap 5",
+        "featuredDark": false
+      },
+      {
+        "number": "03",
+        "brandTag": "Portfel. Service",
+        "title": "WordPress & Hosting Infrastructure",
+        "description": "Pembuatan website company profile dan retail yang responsif menggunakan WordPress & Elementor, disertai pengaturan hosting, domain, email korporat, dan backup terjadwal.",
+        "features": [
+          "Responsive Company Profile & Retail Website (Elementor)",
+          "Setup Web Hosting, Domain & Optimasi Keamanan",
+          "Konfigurasi Email Instansi/Perusahaan & Scheduled Backup"
+        ],
+        "techFooter": "WordPress \u2022 Elementor \u2022 Hosting & Email Setup",
+        "featuredDark": false
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "Projects",
+    "heading": "Building Digital Solutions.",
+    "filters": [
+      { "label": "All", "value": "all", "active": true },
+      { "label": "School & Campus", "value": "school", "active": false },
+      { "label": "Web App", "value": "webapp", "active": false },
+      { "label": "Portal & CMS", "value": "others", "active": false }
+    ],
+    "items": [
+      {
+        "category": "school",
+        "badge": "Campus",
+        "image": "images/paramonth.PNG",
+        "role": "Web Developer",
+        "year": "2026",
+        "title": "Prestasi Prima Polytechnic \u2013 Institutional Website",
+        "description": "Developed a modern institutional website to present academic programs, campus information, and digital content with a responsive user interface.",
+        "tags": ["Next.js", "Tailwind CSS"],
+        "detailText": "View Detail",
+        "detailUrl": "page/project.html"
+      },
+      {
+        "category": "webapp",
+        "badge": "Web App",
+        "image": "images/elbria.PNG",
+        "role": "Full-Stack Developer",
+        "year": "2026",
+        "title": "Orens Absence \u2013 Extracurricular Attendance System",
+        "description": "Web-based attendance system for extracurricular activities utilizing QR Code scanning and GPS verification for accurate, secure attendance tracking and reporting.",
+        "tags": ["Laravel", "Filament", "Tailwind", "MySQL"],
+        "detailText": "View Detail",
+        "detailUrl": "page/project.html"
+      },
+      {
+        "category": "school",
+        "badge": "School",
+        "image": "images/myweb/labsco.png",
+        "role": "Full-Stack Developer",
+        "year": "2025",
+        "title": "SMA Prestasi Prima \u2013 School Website",
+        "description": "Built and managed the school profile website to deliver academic information, announcements, and institutional content.",
+        "tags": ["Laravel", "Tailwind CSS", "MySQL"],
+        "detailText": "View Detail",
+        "detailUrl": "page/project.html"
+      },
+      {
+        "category": "school",
+        "badge": "School",
+        "image": "images/market.PNG",
+        "role": "Full-Stack Developer",
+        "year": "2025",
+        "title": "SMK Prestasi Prima \u2013 School Website",
+        "description": "Developed and maintained the official school website, providing institutional information, academic content, and digital services for students and the public.",
+        "tags": ["Laravel", "Tailwind CSS", "MySQL"],
+        "detailText": "View Detail",
+        "detailUrl": "page/project.html"
+      },
+      {
+        "category": "webapp",
+        "badge": "Web App",
+        "image": "images/cargoo.PNG",
+        "role": "CMS & API Developer",
+        "year": "2024",
+        "title": "Alinea \u2013 Library Management System",
+        "description": "Mobile-based online library management system. Developed the CMS and REST API enabling seamless book borrowing and return processes through QR code scanning.",
+        "tags": ["Laravel 10", "Bootstrap 5", "MySQL", "REST API"],
+        "detailText": "View Detail",
+        "detailUrl": "page/project.html"
+      },
+      {
+        "category": "others",
+        "badge": "1st Place Bootcamp",
+        "image": "images/myweb/otomod.png",
+        "role": "UI/UX & Full-Stack Developer",
+        "year": "Mei - Jun 2024",
+        "title": "Otomod.com \u2013 News Portal Website",
+        "description": "Automotive news portal developed during Software Development Bootcamp (Won 1st Place). Worked as UI/UX designer in Figma and full-stack developer.",
+        "tags": ["Laravel 9", "Bootstrap 5", "MySQL", "Figma"],
+        "detailText": "Visit Figma",
+        "detailUrl": "https://surl.li/ujtkcp"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact Me",
+    "heading": "Let's Discuss Your Next<br />Digital Solution.",
+    "description": "Tertarik membangun website sekolah/kampus, sistem informasi berbasis Laravel & Next.js, desain UI/UX di Figma, atau website WordPress? Silakan kirim pesan atau hubungi kontak di bawah ini.",
+    "directEmail": {
+      "label": "Direct Email (Bogor, Indonesia)",
+      "email": "ilhamrmdn.work@gmail.com",
+      "copyButtonText": "Copy"
+    },
+    "socialProfile": {
+      "label": "LinkedIn & Phone (+62-895-3016-4170)",
+      "display": "linkedin.com/in/ilham-ramadan-079185213",
+      "url": "https://www.linkedin.com/in/ilham-ramadan-079185213/",
+      "handle": "@ilham-ramadan"
+    },
+    "brandMini": "Portfel.",
+    "form": {
+      "title": "Send a Quick Message",
+      "subtitle": "Isi detail singkat proyek atau pesanmu di bawah ini.",
+      "nameLabel": "Your Name",
+      "namePlaceholder": "Nama lengkap / Instansi",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "nama@email.com",
+      "categoryLabel": "Project Category",
+      "categories": [
+        "Institutional / School Website (Laravel / Next.js)",
+        "Custom Web Application (QR Attendance / CMS / API)",
+        "UI/UX Design & Prototyping (Figma)",
+        "WordPress & Company Profile Website",
+        "Other Digital Solution"
+      ],
+      "messageLabel": "Message / Project Brief",
+      "messagePlaceholder": "Ceritakan kebutuhan website atau sistem yang ingin dibangun...",
+      "responseNote": "Respon rata-rata dalam 1x24 jam kerja \u2022 WhatsApp: +62-895-3016-4170",
+      "submitText": "Send Message"
+    }
+  },
+  "footer": {
+    "brand": "Portfel.",
+    "copyright": "\u2014 Ilham Ramadan \u00a9 2026. All rights reserved.",
+    "backToTopText": "Back to Top \u2191",
+    "backToTopHref": "#landing"
+  }
+}
