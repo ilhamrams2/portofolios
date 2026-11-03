@@ -19,6 +19,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    if (sidebar) {
+        sidebar.addEventListener("click", function (event) {
+            if (event.target.closest(".nav-link")) {
+                sidebar.classList.remove("open");
+            }
+        });
+    }
+
     // Smart Fixed Navbar: Hide on scroll down, show on slight scroll up
     const navbar = document.getElementById("navbar");
     let lastScrollY = window.scrollY;

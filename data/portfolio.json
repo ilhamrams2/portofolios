@@ -15,10 +15,10 @@
       "href": "#contact"
     },
     "socials": [
-      { "icon": "images/icons/sosmed/sos (1).png", "alt": "Instagram" },
-      { "icon": "images/icons/sosmed/sos (2).png", "alt": "Facebook" },
-      { "icon": "images/icons/sosmed/sos (3).png", "alt": "LinkedIn" },
-      { "icon": "images/icons/sosmed/sos (4).png", "alt": "GitHub" }
+      { "icon": "images/icons/sosmed/ig.svg", "alt": "Instagram" },
+      { "icon": "images/icons/sosmed/fb.svg", "alt": "Facebook" },
+      { "icon": "images/icons/sosmed/in.svg", "alt": "LinkedIn" },
+      { "icon": "images/icons/sosmed/gh.svg", "alt": "GitHub" }
     ]
   },
   "hero": {
@@ -135,7 +135,7 @@
         "active": true
       },
       {
-        "period": "Mei 2025 - Jun 2025",
+        "period": "May 2025 - Jun 2025",
         "type": "Freelance",
         "title": "UI/UX Designer",
         "organization": "Labsco Arena Technology (Freelance)",
@@ -144,7 +144,7 @@
         "active": false
       },
       {
-        "period": "April 2025 - May 2025",
+        "period": "Apr 2025 - May 2025",
         "type": "Freelance",
         "title": "WordPress Developer",
         "organization": "PT Adisher Kreasi Indonesia (Freelance)",
@@ -175,16 +175,16 @@
   "services": {
     "eyebrow": "Services",
     "heading": "Digital Solutions I Provide.",
-    "subtitle": "Layanan pengembangan website institusi, sistem informasi berbasis web, desain UI/UX, hingga pengelolaan WordPress & server hosting.",
+    "subtitle": "Web development, custom information systems, UI/UX design, and WordPress & hosting solutions tailored for educational institutions and modern businesses.",
     "items": [
       {
         "number": "01",
         "brandTag": "Portfel. Service",
         "title": "Institutional Website & Web System",
-        "description": "Pengembangan website resmi sekolah/kampus (SMA, SMK, Politeknik) dan sistem informasi berbasis web seperti sistem absensi QR Code & GPS, perpustakaan digital, hingga portal berita.",
+        "description": "Development of official school/campus websites (High School, Vocational, Polytechnic) and web-based information systems including QR Code & GPS attendance, digital libraries, and news portals.",
         "features": [
           "QR Code Scanning & GPS Verification System",
-          "CMS Panel & Dashboard Admin (Laravel / Filament)",
+          "CMS Panel & Admin Dashboard (Laravel / Filament)",
           "RESTful API & Mobile App Backend Integration"
         ],
         "techFooter": "Laravel \u2022 Next.js \u2022 Filament \u2022 MySQL",
@@ -194,10 +194,10 @@
         "number": "02",
         "brandTag": "Portfel. Service",
         "title": "UI/UX Design & Frontend Development",
-        "description": "Perancangan antarmuka pengguna (UI/UX) yang modern dan intuitif menggunakan Figma, mulai dari wireframe, mockup, prototipe interaktif, hingga implementasi kode frontend responsif.",
+        "description": "Designing modern and intuitive user interfaces (UI/UX) in Figma\u2014from wireframes, mockups, and interactive prototypes to clean, responsive frontend implementation.",
         "features": [
-          "Wireframing, Mockups & Interactive Prototype di Figma",
-          "Usability Enhancement & Modern Visual System",
+          "Wireframing, Mockups & Interactive Prototyping in Figma",
+          "Usability Enhancement & Modern Visual Systems",
           "Responsive Frontend (Tailwind CSS, Bootstrap 5, Next.js)"
         ],
         "techFooter": "Figma \u2022 Canva \u2022 Tailwind CSS \u2022 Bootstrap 5",
@@ -207,11 +207,11 @@
         "number": "03",
         "brandTag": "Portfel. Service",
         "title": "WordPress & Hosting Infrastructure",
-        "description": "Pembuatan website company profile dan retail yang responsif menggunakan WordPress & Elementor, disertai pengaturan hosting, domain, email korporat, dan backup terjadwal.",
+        "description": "Building responsive company profile and retail websites using WordPress & Elementor, complete with web hosting setup, domain management, corporate email, and scheduled backups.",
         "features": [
           "Responsive Company Profile & Retail Website (Elementor)",
-          "Setup Web Hosting, Domain & Optimasi Keamanan",
-          "Konfigurasi Email Instansi/Perusahaan & Scheduled Backup"
+          "Web Hosting, Domain Setup & Security Optimization",
+          "Corporate/Institutional Email Setup & Scheduled Backups"
         ],
         "techFooter": "WordPress \u2022 Elementor \u2022 Hosting & Email Setup",
         "featuredDark": false
@@ -293,7 +293,7 @@
         "badge": "1st Place Bootcamp",
         "image": "images/myweb/otomod.png",
         "role": "UI/UX & Full-Stack Developer",
-        "year": "Mei - Jun 2024",
+        "year": "May - Jun 2024",
         "title": "Otomod.com \u2013 News Portal Website",
         "description": "Automotive news portal developed during Software Development Bootcamp (Won 1st Place). Worked as UI/UX designer in Figma and full-stack developer.",
         "tags": ["Laravel 9", "Bootstrap 5", "MySQL", "Figma"],
@@ -305,7 +305,7 @@
   "contact": {
     "eyebrow": "Contact Me",
     "heading": "Let's Discuss Your Next<br />Digital Solution.",
-    "description": "Tertarik membangun website sekolah/kampus, sistem informasi berbasis Laravel & Next.js, desain UI/UX di Figma, atau website WordPress? Silakan kirim pesan atau hubungi kontak di bawah ini.",
+    "description": "Interested in building an institutional website, a Laravel & Next.js web application, UI/UX design in Figma, or a WordPress website? Feel free to send a message or reach out via the contacts below.",
     "directEmail": {
       "label": "Direct Email (Bogor, Indonesia)",
       "email": "ilhamrmdn.work@gmail.com",
@@ -320,11 +320,11 @@
     "brandMini": "Portfel.",
     "form": {
       "title": "Send a Quick Message",
-      "subtitle": "Isi detail singkat proyek atau pesanmu di bawah ini.",
+      "subtitle": "Fill out your project details or message below.",
       "nameLabel": "Your Name",
-      "namePlaceholder": "Nama lengkap / Instansi",
+      "namePlaceholder": "Full name / Organization",
       "emailLabel": "Email Address",
-      "emailPlaceholder": "nama@email.com",
+      "emailPlaceholder": "you@example.com",
       "categoryLabel": "Project Category",
       "categories": [
         "Institutional / School Website (Laravel / Next.js)",
@@ -334,8 +334,8 @@
         "Other Digital Solution"
       ],
       "messageLabel": "Message / Project Brief",
-      "messagePlaceholder": "Ceritakan kebutuhan website atau sistem yang ingin dibangun...",
-      "responseNote": "Respon rata-rata dalam 1x24 jam kerja \u2022 WhatsApp: +62-895-3016-4170",
+      "messagePlaceholder": "Tell me about the website or digital system you want to build...",
+      "responseNote": "Average response within 24 business hours \u2022 WhatsApp: +62-895-3016-4170",
       "submitText": "Send Message"
     }
   },
