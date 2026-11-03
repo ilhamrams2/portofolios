@@ -501,27 +501,31 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (navLinks.length > 0 && sections.length > 0) {
-            window.onscroll = function () {
-                let current = "";
-                const scrollPos = window.scrollY + 180;
+            window.addEventListener(
+                "scroll",
+                function () {
+                    let current = "";
+                    const scrollPos = window.scrollY + 180;
 
-                sections.forEach(function (section) {
-                    const sectionTop = section.offsetTop;
-                    const sectionHeight = section.offsetHeight;
-                    if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
-                        current = section.getAttribute("id");
-                    }
-                });
-
-                if (current) {
-                    navLinks.forEach(function (link) {
-                        const href = link.getAttribute("href");
-                        if (href && href.startsWith("#")) {
-                            link.classList.toggle("active", href === "#" + current);
+                    sections.forEach(function (section) {
+                        const sectionTop = section.offsetTop;
+                        const sectionHeight = section.offsetHeight;
+                        if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                            current = section.getAttribute("id");
                         }
                     });
-                }
-            };
+
+                    if (current) {
+                        navLinks.forEach(function (link) {
+                            const href = link.getAttribute("href");
+                            if (href && href.startsWith("#")) {
+                                link.classList.toggle("active", href === "#" + current);
+                            }
+                        });
+                    }
+                },
+                { passive: true }
+            );
         }
     }
 });

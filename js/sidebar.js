@@ -18,4 +18,34 @@ document.addEventListener("DOMContentLoaded", function () {
             sidebar.classList.remove("open");
         }
     });
+
+    // Smart Fixed Navbar: Hide on scroll down, show on slight scroll up
+    const navbar = document.getElementById("navbar");
+    let lastScrollY = window.scrollY;
+
+    if (navbar) {
+        window.addEventListener(
+            "scroll",
+            function () {
+                const currentScrollY = window.scrollY;
+
+                if (currentScrollY > 20) {
+                    navbar.classList.add("navbar-scrolled");
+                } else {
+                    navbar.classList.remove("navbar-scrolled");
+                }
+
+                if (currentScrollY <= 60) {
+                    navbar.classList.remove("navbar-hidden");
+                } else if (currentScrollY > lastScrollY + 5 && (!sidebar || !sidebar.classList.contains("open"))) {
+                    navbar.classList.add("navbar-hidden");
+                } else if (currentScrollY < lastScrollY - 3) {
+                    navbar.classList.remove("navbar-hidden");
+                }
+
+                lastScrollY = currentScrollY;
+            },
+            { passive: true }
+        );
+    }
 });
