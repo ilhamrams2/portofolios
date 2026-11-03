@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
@@ -26,11 +26,23 @@
     <img src="images/icons/nav/top.svg" alt="" srcset="">
   </a>
   <nav class="navbar" id="navbar">
-    <div class="container">
-      <a class="navbar-brand" href="#">Portfel.</a>
-      <!-- <button id="toggleSidebar">Toggle Sidebar</button> -->
-      <div class="wraps">
-        <img id="toggleSidebar" src="images/icons/nav/menu.svg" alt="" srcset="" />
+    <div class="container nav-header-container">
+      <a class="navbar-brand brand-portfel" href="#landing">Portfel.</a>
+
+      <!-- Desktop Nav Menu -->
+      <div class="nav-desktop-menu d-none d-lg-flex">
+        <a class="nav-desktop-link active" href="#landing">Home</a>
+        <a class="nav-desktop-link" href="#tech-stack">tech stack</a>
+        <a class="nav-desktop-link" href="#about">profile</a>
+        <a class="nav-desktop-link" href="#service">services</a>
+        <a class="nav-desktop-link" href="page/project.html">project</a>
+        <a class="nav-desktop-link" href="page/503.html">certificates</a>
+        <a class="btn-nav-contact" href="#contact">contact me</a>
+      </div>
+
+      <!-- Mobile Hamburger Toggle -->
+      <div class="wraps d-lg-none">
+        <img id="toggleSidebar" src="images/icons/nav/menu.svg" alt="Toggle Menu" />
       </div>
 
       <div class="sidebar-nav">
@@ -42,27 +54,31 @@
 
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#navbar">Home</a>
+              <a class="nav-link" href="#landing">Home</a>
             </li>
             <hr>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About me</a>
+              <a class="nav-link" href="#tech-stack">tech stack</a>
             </li>
             <hr>
             <li class="nav-item">
-              <a class="nav-link" href="#service">My service</a>
+              <a class="nav-link" href="#about">profile</a>
             </li>
             <hr>
             <li class="nav-item">
-              <a class="nav-link" href="#footer">Contact me</a>
+              <a class="nav-link" href="#service">services</a>
             </li>
             <hr>
             <li class="nav-item">
-              <a class="nav-link" href="page/project.html">My project</a>
+              <a class="nav-link" href="page/project.html">project</a>
             </li>
             <hr>
             <li class="nav-item">
-              <a class="nav-link" href="page/503.html">Certificate</a>
+              <a class="nav-link" href="page/503.html">certificates</a>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">contact me</a>
             </li>
           </ul>
 
@@ -76,65 +92,247 @@
           </div>
         </div>
       </div>
+    </div>
   </nav>
 
-  <div class="container landing" id="landing">
-    <div class="left-text">
-      <h1 id="myname">Hi, I'm Ilham Ramadan</h1>
-    </div>
-    <div class="images">
-      <!-- <img src="images/image.png" alt="" class="img-fluid" /> -->
-    </div>
-    <div class="right-text">
-      <p>
-        I'm a web developer and UI/UX enthusiast based in Indonesia. I have a
-        passion for web development and love creating seamless and engaging
-        experiences for web and mobile devices.
-      </p>
-    </div>
-    <div class="hiasan">
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-    </div>
-    <div class="sosmed">
-      <img src="images/icons/sosmed/sos (1).png" alt="" />
-      <img src="images/icons/sosmed/sos (2).png" alt="" />
-      <img src="images/icons/sosmed/sos (3).png" alt="" />
-      <img src="images/icons/sosmed/sos (4).png" alt="" />
-    </div>
-  </div>
+  <section class="landing-section" id="landing">
+    <div class="container landing-hero-container">
+      <div class="hero-grid">
+        <!-- Left Hero Content -->
+        <div class="hero-content" data-aos="fade-right" data-aos-duration="800">
+          <div class="hero-intro">
+            <span class="hero-greeting">Hello I'm</span>
+            <h2 class="hero-name">Ilham Ramadan</h2>
+          </div>
 
-  <section class="about" id="about">
-    <div class="container c-about">
-      <div class="left-text-about">
-        <h2 data-aos="fade-down" data-aos-duration="700">So, who i am?</h2>
-        <h6 data-aos="fade-down" data-aos-duration="800">im Web Developer & UI/UX Design</h6>
-        <p data-aos="fade-down" data-aos-duration="900">
-          I am a Software Engineering graduate and an active 6th-semester
-          student at Universitas Bina Sarana Informatika, based in Cibinong,
-          Indonesia. My passion for coding started in 2019, focusing on web
-          development and UI/UX design. Since then, I have built various
-          projects, creating functional and visually appealing digital
-          experiences.
+          <h1 class="hero-title">
+            Building Digital<br />Solutions.
+          </h1>
+
+          <p class="hero-description">
+            Software developer focused on creating modern, scalable, and user-friendly applications using Laravel, PHP, and modern web technologies.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="page/project.html" class="btn-hero-explore">Explore My Work</a>
+            <a href="#contact" class="link-hero-touch">Get In Touch</a>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual -->
+        <div class="hero-visual-wrapper" data-aos="fade-left" data-aos-duration="800">
+          <div class="hero-image-frame">
+            <img src="images/hero-new.png" alt="Ilham Ramadan - Building Digital Solutions" class="hero-main-image" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Right Indicator Dots -->
+      <div class="hero-bottom-bar">
+        <div class="hero-indicator-dots" aria-label="Page indicators">
+          <span class="indicator-dot"></span>
+          <span class="indicator-dot"></span>
+          <span class="indicator-dot"></span>
+          <span class="indicator-dot"></span>
+          <span class="indicator-dot"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section class="tech-stack-section" id="tech-stack">
+    <div class="container tech-stack-container">
+      <!-- Section Header -->
+      <div class="tech-stack-header">
+        <div class="tech-stack-title-group" data-aos="fade-right" data-aos-duration="700">
+          <div class="tech-stack-eyebrow">
+            <span class="eyebrow-dash"></span>
+            <span class="eyebrow-text">Tech Stack</span>
+          </div>
+          <h2 class="tech-stack-heading">Core Technologies &amp; Tools</h2>
+          <p class="tech-stack-subtitle">
+            The core technologies I use daily to build fast, well-structured, and scalable web applications.
+          </p>
+        </div>
+
+        <div class="tech-stack-primary-badge" data-aos="fade-left" data-aos-duration="700">
+          <span class="badge-dot"></span>
+          <span>Primary Stack : Laravel + Tailwind + Mysql</span>
+        </div>
+      </div>
+
+      <!-- 3 Cards Grid -->
+      <div class="tech-stack-grid">
+        <!-- Card 1: Backend Development -->
+        <div class="tech-card" data-aos="fade-up" data-aos-duration="700">
+          <div class="tech-card-bars" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <h3 class="tech-card-title">Backend Development</h3>
+          <p class="tech-card-desc">Building robust server-side applications and APIs</p>
+          <ul class="tech-item-list">
+            <li class="tech-item"><span class="tech-bullet"></span>Laravel</li>
+            <li class="tech-item"><span class="tech-bullet"></span>PHP 8x</li>
+            <li class="tech-item"><span class="tech-bullet"></span>Node.js</li>
+            <li class="tech-item"><span class="tech-bullet"></span>Mysql</li>
+            <li class="tech-item"><span class="tech-bullet"></span>Restfull API</li>
+          </ul>
+        </div>
+
+        <!-- Card 2: Frontend & Interface -->
+        <div class="tech-card" data-aos="fade-up" data-aos-duration="800">
+          <div class="tech-card-bars" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <h3 class="tech-card-title">Frontend &amp; Interface</h3>
+          <p class="tech-card-desc">Clean, responsive &amp; accessible user interfaces</p>
+          <ul class="tech-item-list">
+            <li class="tech-item"><span class="tech-bullet"></span>JavaScript (ES6+)</li>
+            <li class="tech-item"><span class="tech-bullet"></span>Vue.js</li>
+            <li class="tech-item"><span class="tech-bullet"></span>React.js</li>
+            <li class="tech-item"><span class="tech-bullet"></span>Tailwind CSS</li>
+            <li class="tech-item"><span class="tech-bullet"></span>HTML5 &amp; CSS3</li>
+          </ul>
+        </div>
+
+        <!-- Card 3: Workflow & Tools -->
+        <div class="tech-card" data-aos="fade-up" data-aos-duration="900">
+          <div class="tech-card-bars" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <h3 class="tech-card-title">Workflow &amp; Tools</h3>
+          <p class="tech-card-desc">Version control, testing &amp; deployment tools</p>
+          <ul class="tech-item-list">
+            <li class="tech-item"><span class="tech-bullet"></span>Git &amp; GitHub</li>
+            <li class="tech-item"><span class="tech-bullet"></span>Postman</li>
+            <li class="tech-item"><span class="tech-bullet"></span>Figma</li>
+            <li class="tech-item"><span class="tech-bullet"></span>Linux / cPanel / VPS</li>
+            <li class="tech-item"><span class="tech-bullet"></span>WordPress</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar (Left Bars + Right Dots) -->
+      <div class="tech-stack-bottom-bar">
+        <div class="tech-bottom-bars" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="hero-indicator-dots" aria-label="Page indicators">
+          <span class="indicator-dot"></span>
+          <span class="indicator-dot"></span>
+          <span class="indicator-dot"></span>
+          <span class="indicator-dot"></span>
+          <span class="indicator-dot"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Profile / About Me & Journey Section -->
+  <section class="profile-section" id="about">
+    <div class="container profile-container">
+      <!-- Section Header -->
+      <div class="profile-header" data-aos="fade-down" data-aos-duration="700">
+        <div class="tech-stack-eyebrow">
+          <span class="eyebrow-dash"></span>
+          <span class="eyebrow-text">Profile</span>
+        </div>
+        <h2 class="tech-stack-heading">About Me &amp; Journey</h2>
+        <p class="profile-subtitle">
+          A combination of a software engineering background and hands-on experience building digital solutions for schools and businesses.
         </p>
-        <a href="#contact">
-          <div class="btn" data-aos="fade-right" data-aos-duration="800">Contact me</div>
-        </a>
-        <a href="page/project.html">
-          <div class="btn transparent ms-1" data-aos="fade-left" data-aos-duration="800">See project</div>
-        </a>
       </div>
-      <div class="right-about" data-aos="fade-left" data-aos-duration="800">
-  
+
+      <!-- Two-Column Profile Content -->
+      <div class="profile-grid">
+        <!-- Left Bio Card -->
+        <div class="profile-bio-card" data-aos="fade-right" data-aos-duration="800">
+          <div class="profile-status-badge">
+            <span class="badge-dot"></span>
+            <span>Based on Indonesia &bull; Open for Projects</span>
+          </div>
+
+          <h3 class="profile-bio-title">
+            Focused on Clean Code, Database Performance &amp; User Experience
+          </h3>
+
+          <p class="profile-bio-text">
+            Hello! I'm Ilham Ramadan, a Software Developer passionate about transforming complex administrative and business requirements into well-structured, secure, and user-friendly web applications using Laravel and PHP. I have hands on experience managing projects from database schema design (ERD) and UI design in Figma to fullstack development and deployment to production servers.
+          </p>
+
+          <div class="profile-bio-footer">
+            <span class="profile-bio-role">Full-Stack Laravel &amp; Web Systems</span>
+            <a href="#contact" class="profile-bio-cta" aria-label="Contact Me"></a>
+          </div>
+        </div>
+
+        <!-- Right Timeline Card -->
+        <div class="profile-timeline-card" data-aos="fade-left" data-aos-duration="800">
+          <h3 class="profile-timeline-heading">Experience &amp; Education Timeline</h3>
+
+          <div class="timeline-wrapper">
+            <!-- Vertical Line & Dots -->
+            <div class="timeline-rail" aria-hidden="true">
+              <span class="timeline-dot dot-1"></span>
+              <span class="timeline-dot dot-2"></span>
+              <span class="timeline-dot dot-3"></span>
+              <span class="timeline-dot dot-4"></span>
+            </div>
+
+            <!-- Timeline Entries -->
+            <div class="timeline-items">
+              <!-- Item 1 -->
+              <div class="timeline-entry-card">
+                <div class="timeline-entry-top">
+                  <span class="timeline-date-pill">2025 - Present</span>
+                  <span class="timeline-type-label">Work &amp; Freelance</span>
+                </div>
+                <h4 class="timeline-entry-title">Web Developer &amp; Teacher | School Digitalization Project</h4>
+                <span class="timeline-entry-org">Self-Employed / Digital Solutions Partner</span>
+                <p class="timeline-entry-desc">
+                  Merancang dan membangun sistem informasi sekolah (PPDB Online, CMS Profil Sekolah), aplikasi manajemen inventaris, dan landing page bisnis menggunakan Laravel dan Tailwind CSS.
+                </p>
+                <div class="timeline-tags">
+                  <span class="timeline-tag">Laravel 11</span>
+                  <span class="timeline-tag">PHP</span>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="timeline-entry-card">
+                <h4 class="timeline-entry-title">Full-Stack Web Developer (Freelance &amp; Project-Based)</h4>
+                <span class="timeline-entry-org">Self-Employed / Digital Solutions Partner</span>
+                <p class="timeline-entry-desc">
+                  Merancang dan membangun sistem informasi sekolah (PPDB Online, CMS Profil Sekolah), aplikasi manajemen inventaris, dan landing page bisnis menggunakan Laravel dan Tailwind CSS.
+                </p>
+                <div class="timeline-tags">
+                  <span class="timeline-tag-placeholder"></span>
+                  <span class="timeline-tag-placeholder"></span>
+                  <span class="timeline-tag-placeholder"></span>
+                  <span class="timeline-tag-placeholder"></span>
+                  <span class="timeline-tag-placeholder"></span>
+                  <span class="timeline-tag-placeholder"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="hiasan">
-        <div class="box" data-aos="fade-right" data-aos-duration="800"></div>
-        <div class="box" data-aos="fade" data-aos-duration="800"></div>
-        <div class="box" data-aos="fade-left" data-aos-duration="800"></div>
+
+      <!-- Bottom Bar (Left Bars + Right Dots) -->
+      <div class="tech-stack-bottom-bar">
+        <div class="tech-bottom-bars" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="hero-indicator-dots" aria-label="Page indicators">
+          <span class="indicator-dot"></span>
+          <span class="indicator-dot"></span>
+          <span class="indicator-dot"></span>
+          <span class="indicator-dot"></span>
+          <span class="indicator-dot"></span>
+        </div>
       </div>
-      <div class="hiasan2"></div>
-      <div class="hiasan3" data-aos="fade-right" data-aos-duration="600"></div>
     </div>
   </section>
 

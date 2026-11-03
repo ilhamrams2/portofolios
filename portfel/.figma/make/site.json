@@ -1,0 +1,10 @@
+{
+  "description": "Helps designers plan portfolio sections beyond the hero and projects, with ideas for showcasing skills, process, testimonials, and contact details.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

@@ -36,10 +36,24 @@
     <img src="../images/icons/nav/top.svg" alt="" srcset="">
   </a>
 
-  <nav class="navbar">
-    <div class="container">
-      <a class="navbar-brand" href="../index.html">Portfel.</a>
-      <img id="toggleSidebar" src="../images/icons/nav/menu.svg" alt="" srcset="" />
+  <nav class="navbar" id="navbar">
+    <div class="container nav-header-container">
+      <a class="navbar-brand brand-portfel" href="../index.html">Portfel.</a>
+
+      <!-- Desktop Nav Menu -->
+      <div class="nav-desktop-menu d-none d-lg-flex">
+        <a class="nav-desktop-link" href="../index.html#landing">Home</a>
+        <a class="nav-desktop-link" href="../index.html#tech-stack">tech stack</a>
+        <a class="nav-desktop-link" href="../index.html#about">profile</a>
+        <a class="nav-desktop-link" href="../index.html#service">services</a>
+        <a class="nav-desktop-link" href="project.html">project</a>
+        <a class="nav-desktop-link active" href="503.html">certificates</a>
+        <a class="btn-nav-contact" href="../index.html#contact">contact me</a>
+      </div>
+
+      <div class="wraps d-lg-none">
+        <img id="toggleSidebar" src="../images/icons/nav/menu.svg" alt="" srcset="" />
+      </div>
 
       <div class="sidebar-nav">
         <div class="wrappers">
