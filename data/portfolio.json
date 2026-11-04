@@ -339,6 +339,47 @@
       "submitText": "Send Message"
     }
   },
+  "certificates": {
+    "eyebrow": "Training & License Certificates",
+    "heading": "Verified Credentials & Achievements.",
+    "subtitle": "Professional competency certifications, technical credentials, and software engineering awards.",
+    "primaryBadge": "BNSP Certified \u2022 Cisco Python \u2022 1st Place Bootcamp",
+    "items": [
+      {
+        "number": "01",
+        "category": "license",
+        "badge": "Professional License",
+        "period": "Valid 2025 \u2013 2028",
+        "title": "Certified Program Analyst in Software Development",
+        "issuer": "BNSP (Badan Nasional Sertifikasi Profesi)",
+        "description": "National professional competency certification validating expertise in software requirements analysis, database design, object-oriented program specification, and enterprise software engineering standards.",
+        "tags": ["BNSP National License", "Program Analyst", "System Architecture", "Software Engineering"],
+        "featuredDark": true
+      },
+      {
+        "number": "02",
+        "category": "technical",
+        "badge": "Technical Certificate",
+        "period": "Issued 2023",
+        "title": "PCAP: Programming Essentials in Python",
+        "issuer": "Cisco Networking Academy & OpenEDG Python Institute",
+        "description": "Comprehensive certification covering Python programming fundamentals, data structures, modular architecture, exception handling, and object-oriented programming (OOP) principles.",
+        "tags": ["Python", "OOP", "Cisco Networking Academy", "OpenEDG"],
+        "featuredDark": false
+      },
+      {
+        "number": "03",
+        "category": "award",
+        "badge": "1st Place Winner",
+        "period": "Issued 2024",
+        "title": "Bootcamp Software Development UBSI 2024",
+        "issuer": "University Bina Sarana Informatika (UBSI)",
+        "description": "Awarded 1st Place in the Web Development Bootcamp 2024 for designing and developing Otomod.com, a full-stack automotive news portal built with Laravel 9, Bootstrap 5, MySQL, and Figma.",
+        "tags": ["1st Place Winner", "Full-Stack Laravel", "UI/UX Design", "Web Bootcamp"],
+        "featuredDark": false
+      }
+    ]
+  },
   "footer": {
     "brand": "Portfel.",
     "copyright": "\u2014 Ilham Ramadan \u00a9 2026. All rights reserved.",
