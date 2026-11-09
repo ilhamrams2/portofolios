@@ -90,79 +90,102 @@
     </div>
   </nav>
 
-  <!-- Dynamic Project Detail Section -->
+  <!-- E-Commerce Style Project Detail Section -->
   <section class="project-detail-section" id="project-detail">
     <div class="container">
-      <!-- Top Header -->
-      <div class="tech-stack-header project-detail-header" data-aos="fade-down" data-aos-duration="700">
-        <div class="tech-stack-title-group">
-          <div class="tech-stack-eyebrow">
-            <span class="eyebrow-dash"></span>
-            <span class="eyebrow-text" id="detail-badge">Project Detail</span>
-          </div>
-          <h1 class="tech-stack-heading" id="detail-title">Prestasi Prima Polytechnic</h1>
-          <p class="tech-stack-subtitle" id="detail-subtitle">
-            Modern campus website showcasing academic programs and institutional information.
-          </p>
-        </div>
+      <!-- Top Breadcrumb Bar -->
+      <div class="ecom-breadcrumb-bar" data-aos="fade-down" data-aos-duration="600">
+        <nav class="ecom-breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span class="crumb-sep">/</span>
+          <a href="../index.html#projects">Projects</a>
+          <span class="crumb-sep">/</span>
+          <span class="crumb-cat" id="crumb-category">School</span>
+          <span class="crumb-sep">/</span>
+          <span class="crumb-current" id="crumb-title">SMA Prestasi Prima Website</span>
+        </nav>
 
-        <a href="../index.html#projects" class="cert-btn-secondary">&larr; Back to Projects</a>
+        <a href="../index.html#projects" class="ecom-back-link">&larr; Back to Projects</a>
       </div>
 
-      <!-- Quick Project Switcher Tabs -->
-      <div class="project-switcher-bar" id="project-switcher" data-aos="fade-up" data-aos-duration="700">
-        <!-- Populated dynamically -->
-      </div>
-
-      <!-- Main 2-Column Detail Content -->
-      <div class="project-detail-grid" data-aos="fade-up" data-aos-duration="800">
-        <!-- Left Column: Preview Image + Meta Info -->
-        <div class="project-detail-left">
-          <div class="project-detail-image-card">
-            <div class="project-detail-img-wrap">
+      <!-- Main E-Commerce Product Showcase (Left Gallery + Right Product Info) -->
+      <div class="ecom-product-grid" data-aos="fade-up" data-aos-duration="750">
+        <!-- Left Column: Product Gallery -->
+        <div class="ecom-gallery-col">
+          <div class="ecom-main-image-card">
+            <div class="ecom-main-img-wrap">
               <img
                 id="detail-image"
-                src="../images/paramonth.PNG"
+                src="../images/projects/screencapture-172-16-11-30-3000-2026-11-09-07_55_22.png"
                 alt="Project Preview"
-                class="project-detail-img" />
+                class="ecom-main-img view-full" />
               <span class="project-cat-badge" id="detail-cat-pill">Campus</span>
+              <span class="ecom-view-label" id="ecom-view-badge">Hero Section</span>
             </div>
           </div>
 
-          <!-- 4 Compact Metadata Boxes -->
-          <div class="project-detail-meta-grid">
-            <div class="project-meta-box">
-              <span class="project-meta-label">Client / Organization</span>
-              <strong class="project-meta-value" id="detail-client">Politeknik Prestasi Prima</strong>
-            </div>
-            <div class="project-meta-box">
-              <span class="project-meta-label">Role</span>
-              <strong class="project-meta-value" id="detail-role">Web Developer</strong>
-            </div>
-            <div class="project-meta-box">
-              <span class="project-meta-label">Year</span>
-              <strong class="project-meta-value" id="detail-year">2026</strong>
-            </div>
-            <div class="project-meta-box">
-              <span class="project-meta-label">Category</span>
-              <strong class="project-meta-value" id="detail-category-name">Campus Website</strong>
-            </div>
+          <!-- Thumbnail Strip (Interactive View Modes) -->
+          <div class="ecom-thumb-strip" id="detail-thumbs">
+            <button type="button" class="ecom-thumb-item active" data-view="view-full" data-label="Hero Section">
+              <img src="../images/projects/screencapture-172-16-11-30-3000-2026-11-09-07_55_22.png" alt="Hero View" class="thumb-img view-full" />
+              <span class="thumb-caption">Hero Section</span>
+            </button>
+            <button type="button" class="ecom-thumb-item" data-view="view-hero" data-label="Content Section">
+              <img src="../images/projects/screencapture-172-16-11-30-3000-2026-11-09-07_55_22.png" alt="Content View" class="thumb-img view-hero" />
+              <span class="thumb-caption">Main Content</span>
+            </button>
+            <button type="button" class="ecom-thumb-item" data-view="view-detail" data-label="Bottom Section">
+              <img src="../images/projects/screencapture-172-16-11-30-3000-2026-11-09-07_55_22.png" alt="Bottom View" class="thumb-img view-detail" />
+              <span class="thumb-caption">Footer &amp; Info</span>
+            </button>
           </div>
         </div>
 
-        <!-- Right Column: Overview, Key Features, Tech Stack & Actions -->
-        <div class="project-detail-right">
-          <div class="project-detail-info-card">
-            <div class="project-detail-block">
-              <span class="project-block-label">Project Overview</span>
-              <p class="project-detail-overview" id="detail-overview">
+        <!-- Right Column: E-Commerce Product Details & Specs -->
+        <div class="ecom-info-col">
+          <div class="ecom-product-info-card">
+            <!-- Top Badges -->
+            <div class="ecom-meta-top">
+              <span class="ecom-badge-pill" id="detail-badge">Campus &bull; 2026</span>
+              <span class="ecom-status-pill">
+                <span class="status-dot"></span>Completed Project
+              </span>
+            </div>
+
+            <!-- Title & Subtitle -->
+            <h1 class="ecom-product-title" id="detail-title">Prestasi Prima Polytechnic</h1>
+            <p class="ecom-product-subtitle" id="detail-subtitle">
+              Modern campus website showcasing academic programs and institutional information.
+            </p>
+
+            <!-- Specs Strip (Client / Role / Year) -->
+            <div class="ecom-specs-row">
+              <div class="ecom-spec-item">
+                <span class="ecom-spec-label">Client</span>
+                <strong class="ecom-spec-val" id="detail-client">Politeknik Prestasi Prima</strong>
+              </div>
+              <div class="ecom-spec-item">
+                <span class="ecom-spec-label">Role</span>
+                <strong class="ecom-spec-val" id="detail-role">Web Developer</strong>
+              </div>
+              <div class="ecom-spec-item">
+                <span class="ecom-spec-label">Timeline</span>
+                <strong class="ecom-spec-val" id="detail-year">2026</strong>
+              </div>
+            </div>
+
+            <!-- Overview -->
+            <div class="ecom-section-block">
+              <span class="ecom-block-title">About This Project</span>
+              <p class="ecom-overview-text" id="detail-overview">
                 Developed a modern institutional website for Politeknik Prestasi Prima to present academic study programs, campus facilities, admission information, and digital news with a fast, responsive user interface.
               </p>
             </div>
 
-            <div class="project-detail-block">
-              <span class="project-block-label">Key Highlights</span>
-              <ul class="service-feature-list project-detail-features" id="detail-features">
+            <!-- Key Features -->
+            <div class="ecom-section-block">
+              <span class="ecom-block-title">Key Deliverables</span>
+              <ul class="service-feature-list ecom-feature-list" id="detail-features">
                 <li>
                   <span class="service-dot"></span>
                   <span>Responsive study program &amp; campus directory pages</span>
@@ -178,22 +201,26 @@
               </ul>
             </div>
 
-            <div class="project-detail-block">
-              <span class="project-block-label">Technologies Used</span>
-              <div class="project-tags-row project-detail-tags" id="detail-tags">
+            <!-- Tech Stack -->
+            <div class="ecom-section-block">
+              <span class="ecom-block-title">Tech Stack</span>
+              <div class="project-tags-row ecom-tags-row" id="detail-tags">
                 <span class="project-tech-tag">Next.js</span>
                 <span class="project-tech-tag">Tailwind CSS</span>
               </div>
             </div>
 
-            <div class="project-detail-actions" id="detail-actions">
-              <a href="../index.html#contact" class="btn-hero-explore">Inquire About Similar Project</a>
+            <!-- CTA Actions -->
+            <div class="ecom-action-box">
+              <a href="../index.html#contact" class="btn-hero-explore ecom-primary-btn">
+                Request Similar Project
+              </a>
               <a
                 href="#"
                 id="detail-external-btn"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="cert-btn-secondary d-none">
+                class="cert-btn-secondary ecom-secondary-btn d-none">
                 Open Figma Prototype &nearr;
               </a>
             </div>
@@ -201,17 +228,21 @@
         </div>
       </div>
 
-      <!-- Bottom Bar (Left Bars + Right Dots) -->
-      <div class="tech-stack-bottom-bar">
-        <div class="tech-bottom-bars" aria-hidden="true">
-          <span></span><span></span><span></span><span></span><span></span><span></span>
+      <!-- Related / Other Projects Section (E-Commerce "Related Products" Grid) -->
+      <div class="ecom-related-section" data-aos="fade-up" data-aos-duration="850">
+        <div class="ecom-related-header">
+          <div>
+            <div class="tech-stack-eyebrow">
+              <span class="eyebrow-dash"></span>
+              <span class="eyebrow-text">More Projects</span>
+            </div>
+            <h2 class="ecom-related-title">Explore Other Projects.</h2>
+          </div>
+          <a href="../index.html#projects" class="ecom-view-all-link">View All Projects &rarr;</a>
         </div>
-        <div class="hero-indicator-dots" aria-label="Page indicators">
-          <span class="indicator-dot"></span>
-          <span class="indicator-dot"></span>
-          <span class="indicator-dot"></span>
-          <span class="indicator-dot active"></span>
-          <span class="indicator-dot"></span>
+
+        <div class="projects-grid ecom-related-grid" id="related-projects-grid">
+          <!-- Populated dynamically with 3 other projects -->
         </div>
       </div>
     </div>
@@ -241,56 +272,37 @@
           id: "prestasi-prima-polytechnic",
           category: "school",
           badge: "Campus",
-          image: "images/paramonth.PNG",
+          image: "images/projects/screencapture-172-16-11-30-3000-2026-11-09-07_55_22.png",
           role: "Web Developer",
           year: "2026",
           client: "Politeknik Prestasi Prima",
           title: "Prestasi Prima Polytechnic",
-          description: "Modern campus website showcasing academic programs and institutional information.",
+          description: "Modern institutional website presenting academic programs, virtual tour, and campus information.",
           overview:
-            "Developed a modern institutional website for Politeknik Prestasi Prima to present academic study programs, campus facilities, admission information, and digital news with a fast, responsive user interface.",
+            "Developed a modern institutional website for Politeknik Prestasi Prima to present Diploma 3 & 4 study programs, 360° virtual campus tour, admission guides, and campus news with a responsive interface.",
           features: [
-            "Responsive study program & campus directory pages",
-            "Fast page performance and SEO-friendly structure",
-            "Clean, accessible UI built with Next.js & Tailwind CSS"
+            "Interactive study program & 360° virtual campus tour sections",
+            "Fast page performance and SEO-friendly architecture",
+            "Clean, responsive UI built with Next.js & Tailwind CSS"
           ],
           tags: ["Next.js", "Tailwind CSS"]
-        },
-        {
-          id: "orens-absence",
-          category: "webapp",
-          badge: "Web App",
-          image: "images/elbria.PNG",
-          role: "Full-Stack Developer",
-          year: "2026",
-          client: "SMK Prestasi Prima",
-          title: "Orens Absence System",
-          description: "Extracurricular attendance web app with QR Code scanning and GPS verification.",
-          overview:
-            "A web-based extracurricular attendance platform (OrensPro) utilizing QR Code scanning and real-time GPS location verification to ensure accurate student attendance tracking and automated reporting.",
-          features: [
-            "Dynamic QR Code scanning & GPS radius verification",
-            "Real-time attendance session management",
-            "Filament admin dashboard with automated attendance reports"
-          ],
-          tags: ["Laravel", "Filament", "Tailwind CSS", "MySQL"]
         },
         {
           id: "sma-prestasi-prima",
           category: "school",
           badge: "School",
-          image: "images/myweb/labsco.png",
+          image: "images/projects/screencapture-sma-prestasiprima-sch-id-2026-11-09-08_18_45.png",
           role: "Full-Stack Developer",
           year: "2025",
           client: "SMA Prestasi Prima",
           title: "SMA Prestasi Prima Website",
-          description: "Official high school profile portal for academic news and announcements.",
+          description: "Official high school profile portal for academic programs, achievements, and news.",
           overview:
-            "Built and maintained the official school profile website for SMA Prestasi Prima to deliver academic announcements, student achievements, and institutional information.",
+            "Built and managed the official school profile website for SMA Prestasi Prima to deliver academic information, student achievements, 360° virtual tour, and institutional announcements.",
           features: [
-            "Dynamic news, events & achievement gallery CMS",
-            "Mobile-responsive layout with Tailwind CSS",
-            "Structured MySQL database & content management panel"
+            "Dynamic news, student achievements & uniform showcase CMS",
+            "Interactive 360° virtual school tour & admission info",
+            "Responsive layout built with Laravel, Tailwind CSS & MySQL"
           ],
           tags: ["Laravel", "Tailwind CSS", "MySQL"]
         },
@@ -298,39 +310,58 @@
           id: "smk-prestasi-prima",
           category: "school",
           badge: "School",
-          image: "images/market.PNG",
+          image: "images/projects/screencapture-smk-prestasiprima-sch-id-2026-11-09-08_17_56.png",
           role: "Full-Stack Developer",
           year: "2025",
           client: "SMK Prestasi Prima",
           title: "SMK Prestasi Prima Website",
-          description: "Vocational school website providing academic content and student digital services.",
+          description: "Official vocational school website showcasing departments, industry partners, and student services.",
           overview:
-            "Developed and maintained the official website for SMK Prestasi Prima, providing vocational program profiles, academic updates, and digital information services for students and parents.",
+            "Developed and maintained the official website for SMK Prestasi Prima, providing vocational department profiles (PPLG, TKJ, BCF, DKV), academic content, and digital services for students and the public.",
           features: [
-            "Vocational department & facility showcase pages",
-            "Easy-to-use CMS dashboard for school administrators",
-            "Optimized query performance & server deployment"
+            "Vocational department showcase & school journey timeline",
+            "360° virtual campus tour, PTN alumni & industry partner sections",
+            "CMS dashboard for school news, events & announcements"
           ],
           tags: ["Laravel", "Tailwind CSS", "MySQL"]
         },
         {
-          id: "alinea-library",
-          category: "webapp",
-          badge: "Web App",
-          image: "images/cargoo.PNG",
-          role: "CMS & API Developer",
-          year: "2024",
-          client: "Alinea Digital Library",
-          title: "Alinea Library System",
-          description: "Online library CMS and REST API with QR code book borrowing and returns.",
+          id: "labsco-arena",
+          category: "company",
+          badge: "Company Profile",
+          image: "images/projects/screencapture-labsco-arena-co-id-2026-11-09-08_20_38.png",
+          role: "UI/UX & Frontend Dev",
+          year: "2025",
+          client: "Labsco Arena Technology",
+          title: "Labsco Arena Technology",
+          description: "Company profile website and UI/UX design for a sports timing & arena equipment provider.",
           overview:
-            "Alinea is a mobile-connected online library management system. I developed the web CMS dashboard and RESTful API to power seamless book cataloging, borrowing, and return workflows via QR code scanning.",
+            "Designed UI/UX wireframes, interactive prototypes, and mockups in Figma, and developed the responsive frontend for Labsco Arena Technology's company profile website.",
           features: [
-            "RESTful API integration for mobile library application",
-            "QR code-based book borrowing & return workflow",
-            "Web CMS for book inventory & member management"
+            "UI/UX wireframes, mockups & interactive prototype in Figma",
+            "Product & service showcase for sports timing and LED scoreboards",
+            "Responsive frontend built with HTML, Bootstrap, CSS & JavaScript"
           ],
-          tags: ["Laravel 10", "Bootstrap 5", "MySQL", "REST API"]
+          tags: ["Figma", "Bootstrap", "JavaScript", "HTML/CSS"]
+        },
+        {
+          id: "adisher-leather",
+          category: "company",
+          badge: "Retail & Web",
+          image: "images/projects/screencapture-adisherleather-2026-11-09-08_19_40.png",
+          role: "WordPress Developer",
+          year: "2025",
+          client: "PT Adisher Kreasi Indonesia",
+          title: "Adisher Leather Website",
+          description: "Responsive leather retail and company profile website built with WordPress and Elementor.",
+          overview:
+            "Developed a responsive company profile and leather retail showcase website for PT Adisher Kreasi Indonesia using WordPress and Elementor, complete with hosting, security, and corporate email setup.",
+          features: [
+            "Custom responsive catalog & brand showcase with Elementor",
+            "Hosting environment optimization, SSL & security configuration",
+            "Corporate email system setup with automated scheduled backups"
+          ],
+          tags: ["WordPress", "Elementor", "Hosting", "SSL"]
         },
         {
           id: "otomod-portal",
@@ -361,6 +392,35 @@
         return "../" + imgPath;
       }
 
+      function initGalleryThumbnails(imgSrc, projectTitle) {
+        const mainImg = document.getElementById("detail-image");
+        const viewBadge = document.getElementById("ecom-view-badge");
+        const thumbWrap = document.getElementById("detail-thumbs");
+        if (!thumbWrap || !mainImg) return;
+
+        const thumbImgs = thumbWrap.querySelectorAll(".thumb-img");
+        thumbImgs.forEach((img) => {
+          img.src = imgSrc;
+          img.alt = projectTitle;
+        });
+
+        const thumbBtns = thumbWrap.querySelectorAll(".ecom-thumb-item");
+        thumbBtns.forEach((btn) => {
+          btn.classList.remove("active");
+          if (btn.getAttribute("data-view") === "view-full") {
+            btn.classList.add("active");
+          }
+          btn.onclick = function () {
+            thumbBtns.forEach((b) => b.classList.remove("active"));
+            btn.classList.add("active");
+            const viewClass = btn.getAttribute("data-view") || "view-full";
+            const label = btn.getAttribute("data-label") || "Full Preview";
+            mainImg.className = "ecom-main-img " + viewClass;
+            if (viewBadge) viewBadge.textContent = label;
+          };
+        });
+      }
+
       function renderProjectDetail(projects) {
         const params = new URLSearchParams(window.location.search);
         const currentId = params.get("id") || projects[0].id;
@@ -368,6 +428,10 @@
 
         document.title = project.title + " | Portfel.";
 
+        const resolvedImg = resolveImagePath(project.image);
+
+        const crumbCat = document.getElementById("crumb-category");
+        const crumbTitle = document.getElementById("crumb-title");
         const badgeEl = document.getElementById("detail-badge");
         const titleEl = document.getElementById("detail-title");
         const subtitleEl = document.getElementById("detail-subtitle");
@@ -376,26 +440,29 @@
         const clientEl = document.getElementById("detail-client");
         const roleEl = document.getElementById("detail-role");
         const yearEl = document.getElementById("detail-year");
-        const catNameEl = document.getElementById("detail-category-name");
         const overviewEl = document.getElementById("detail-overview");
         const featuresEl = document.getElementById("detail-features");
         const tagsEl = document.getElementById("detail-tags");
         const externalBtn = document.getElementById("detail-external-btn");
-        const switcherEl = document.getElementById("project-switcher");
+        const relatedGrid = document.getElementById("related-projects-grid");
 
-        if (badgeEl) badgeEl.textContent = "Project Detail \u2022 " + project.year;
+        if (crumbCat) crumbCat.textContent = project.badge;
+        if (crumbTitle) crumbTitle.textContent = project.title;
+        if (badgeEl) badgeEl.textContent = project.badge + " \u2022 " + project.year;
         if (titleEl) titleEl.textContent = project.title;
         if (subtitleEl) subtitleEl.textContent = project.description;
         if (imageEl) {
-          imageEl.src = resolveImagePath(project.image);
+          imageEl.src = resolvedImg;
           imageEl.alt = project.title;
+          imageEl.className = "ecom-main-img view-full";
         }
         if (catPillEl) catPillEl.textContent = project.badge;
         if (clientEl) clientEl.textContent = project.client || "Institutional Project";
         if (roleEl) roleEl.textContent = project.role;
         if (yearEl) yearEl.textContent = project.year;
-        if (catNameEl) catNameEl.textContent = project.badge;
         if (overviewEl) overviewEl.textContent = project.overview || project.description;
+
+        initGalleryThumbnails(resolvedImg, project.title);
 
         if (featuresEl && Array.isArray(project.features)) {
           featuresEl.innerHTML = project.features
@@ -426,17 +493,36 @@
           }
         }
 
-        if (switcherEl) {
-          switcherEl.innerHTML = projects
-            .map(
-              (item) => `
-              <a
-                href="?id=${item.id}"
-                class="project-filter-tab ${item.id === project.id ? "active" : ""}">
-                ${item.title}
-              </a>
-            `
-            )
+        // Populate Related / Other Projects (3 items excluding current)
+        if (relatedGrid) {
+          const others = projects.filter((item) => item.id !== project.id).slice(0, 3);
+          relatedGrid.innerHTML = others
+            .map((item) => {
+              const itemImg = resolveImagePath(item.image);
+              const itemTags = (item.tags || [])
+                .map((t) => `<span class="project-tech-tag">${t}</span>`)
+                .join("");
+              return `
+                <div class="project-showcase-card">
+                  <div class="project-thumb-wrap">
+                    <img src="${itemImg}" alt="${item.title}" class="project-thumb-img" />
+                    <span class="project-cat-badge">${item.badge}</span>
+                  </div>
+                  <div class="project-card-body">
+                    <div class="project-meta-row">
+                      <span class="project-role-text">${item.role}</span>
+                      <span class="project-year-text">${item.year}</span>
+                    </div>
+                    <h3 class="project-card-title">${item.title}</h3>
+                    <p class="project-card-desc">${item.description}</p>
+                    <div class="project-tags-row">${itemTags}</div>
+                    <div class="project-card-action">
+                      <a href="?id=${item.id}" class="btn-project-detail">View Detail</a>
+                    </div>
+                  </div>
+                </div>
+              `;
+            })
             .join("");
         }
       }

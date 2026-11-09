@@ -206,7 +206,7 @@
     "filters": [
       { "label": "All", "value": "all", "active": true },
       { "label": "School & Campus", "value": "school", "active": false },
-      { "label": "Web App", "value": "webapp", "active": false },
+      { "label": "Company & Retail", "value": "company", "active": false },
       { "label": "Portal & CMS", "value": "others", "active": false }
     ],
     "items": [
@@ -214,57 +214,37 @@
         "id": "prestasi-prima-polytechnic",
         "category": "school",
         "badge": "Campus",
-        "image": "images/paramonth.PNG",
+        "image": "images/projects/screencapture-172-16-11-30-3000-2026-11-09-07_55_22.png",
         "role": "Web Developer",
         "year": "2026",
         "client": "Politeknik Prestasi Prima",
         "title": "Prestasi Prima Polytechnic",
-        "description": "Modern campus website showcasing academic programs and institutional information.",
-        "overview": "Developed a modern institutional website for Politeknik Prestasi Prima to present academic study programs, campus facilities, admission information, and digital news with a fast, responsive user interface.",
+        "description": "Modern institutional website presenting academic programs, virtual tour, and campus information.",
+        "overview": "Developed a modern institutional website for Politeknik Prestasi Prima to present Diploma 3 & 4 study programs, 360° virtual campus tour, admission guides, and campus news with a responsive interface.",
         "features": [
-          "Responsive study program & campus directory pages",
-          "Fast page performance and SEO-friendly structure",
-          "Clean, accessible UI built with Next.js & Tailwind CSS"
+          "Interactive study program & 360° virtual campus tour sections",
+          "Fast page performance and SEO-friendly architecture",
+          "Clean, responsive UI built with Next.js & Tailwind CSS"
         ],
         "tags": ["Next.js", "Tailwind CSS"],
         "detailText": "View Detail",
         "detailUrl": "page/project.html?id=prestasi-prima-polytechnic"
       },
       {
-        "id": "orens-absence",
-        "category": "webapp",
-        "badge": "Web App",
-        "image": "images/elbria.PNG",
-        "role": "Full-Stack Developer",
-        "year": "2026",
-        "client": "SMK Prestasi Prima",
-        "title": "Orens Absence System",
-        "description": "Extracurricular attendance web app with QR Code scanning and GPS verification.",
-        "overview": "A web-based extracurricular attendance platform (OrensPro) utilizing QR Code scanning and real-time GPS location verification to ensure accurate student attendance tracking and automated reporting.",
-        "features": [
-          "Dynamic QR Code scanning & GPS radius verification",
-          "Real-time attendance session management",
-          "Filament admin dashboard with automated attendance reports"
-        ],
-        "tags": ["Laravel", "Filament", "Tailwind CSS", "MySQL"],
-        "detailText": "View Detail",
-        "detailUrl": "page/project.html?id=orens-absence"
-      },
-      {
         "id": "sma-prestasi-prima",
         "category": "school",
         "badge": "School",
-        "image": "images/myweb/labsco.png",
+        "image": "images/projects/screencapture-sma-prestasiprima-sch-id-2026-11-09-08_18_45.png",
         "role": "Full-Stack Developer",
         "year": "2025",
         "client": "SMA Prestasi Prima",
         "title": "SMA Prestasi Prima Website",
-        "description": "Official high school profile portal for academic news and announcements.",
-        "overview": "Built and maintained the official school profile website for SMA Prestasi Prima to deliver academic announcements, student achievements, and institutional information.",
+        "description": "Official high school profile portal for academic programs, achievements, and news.",
+        "overview": "Built and managed the official school profile website for SMA Prestasi Prima to deliver academic information, student achievements, 360° virtual tour, and institutional announcements.",
         "features": [
-          "Dynamic news, events & achievement gallery CMS",
-          "Mobile-responsive layout with Tailwind CSS",
-          "Structured MySQL database & content management panel"
+          "Dynamic news, student achievements & uniform showcase CMS",
+          "Interactive 360° virtual school tour & admission info",
+          "Responsive layout built with Laravel, Tailwind CSS & MySQL"
         ],
         "tags": ["Laravel", "Tailwind CSS", "MySQL"],
         "detailText": "View Detail",
@@ -274,41 +254,61 @@
         "id": "smk-prestasi-prima",
         "category": "school",
         "badge": "School",
-        "image": "images/market.PNG",
+        "image": "images/projects/screencapture-smk-prestasiprima-sch-id-2026-11-09-08_17_56.png",
         "role": "Full-Stack Developer",
         "year": "2025",
         "client": "SMK Prestasi Prima",
         "title": "SMK Prestasi Prima Website",
-        "description": "Vocational school website providing academic content and student digital services.",
-        "overview": "Developed and maintained the official website for SMK Prestasi Prima, providing vocational program profiles, academic updates, and digital information services for students and parents.",
+        "description": "Official vocational school website showcasing departments, industry partners, and student services.",
+        "overview": "Developed and maintained the official website for SMK Prestasi Prima, providing vocational department profiles (PPLG, TKJ, BCF, DKV), academic content, and digital services for students and the public.",
         "features": [
-          "Vocational department & facility showcase pages",
-          "Easy-to-use CMS dashboard for school administrators",
-          "Optimized query performance & server deployment"
+          "Vocational department showcase & school journey timeline",
+          "360° virtual campus tour, PTN alumni & industry partner sections",
+          "CMS dashboard for school news, events & announcements"
         ],
         "tags": ["Laravel", "Tailwind CSS", "MySQL"],
         "detailText": "View Detail",
         "detailUrl": "page/project.html?id=smk-prestasi-prima"
       },
       {
-        "id": "alinea-library",
-        "category": "webapp",
-        "badge": "Web App",
-        "image": "images/cargoo.PNG",
-        "role": "CMS & API Developer",
-        "year": "2024",
-        "client": "Alinea Digital Library",
-        "title": "Alinea Library System",
-        "description": "Online library CMS and REST API with QR code book borrowing and returns.",
-        "overview": "Alinea is a mobile-connected online library management system. I developed the web CMS dashboard and RESTful API to power seamless book cataloging, borrowing, and return workflows via QR code scanning.",
+        "id": "labsco-arena",
+        "category": "company",
+        "badge": "Company Profile",
+        "image": "images/projects/screencapture-labsco-arena-co-id-2026-11-09-08_20_38.png",
+        "role": "UI/UX & Frontend Dev",
+        "year": "2025",
+        "client": "Labsco Arena Technology",
+        "title": "Labsco Arena Technology",
+        "description": "Company profile website and UI/UX design for a sports timing & arena equipment provider.",
+        "overview": "Designed UI/UX wireframes, interactive prototypes, and mockups in Figma, and developed the responsive frontend for Labsco Arena Technology's company profile website.",
         "features": [
-          "RESTful API integration for mobile library application",
-          "QR code-based book borrowing & return workflow",
-          "Web CMS for book inventory & member management"
+          "UI/UX wireframes, mockups & interactive prototype in Figma",
+          "Product & service showcase for sports timing and LED scoreboards",
+          "Responsive frontend built with HTML, Bootstrap, CSS & JavaScript"
         ],
-        "tags": ["Laravel 10", "Bootstrap 5", "MySQL", "REST API"],
+        "tags": ["Figma", "Bootstrap", "JavaScript", "HTML/CSS"],
         "detailText": "View Detail",
-        "detailUrl": "page/project.html?id=alinea-library"
+        "detailUrl": "page/project.html?id=labsco-arena"
+      },
+      {
+        "id": "adisher-leather",
+        "category": "company",
+        "badge": "Retail & Web",
+        "image": "images/projects/screencapture-adisherleather-2026-11-09-08_19_40.png",
+        "role": "WordPress Developer",
+        "year": "2025",
+        "client": "PT Adisher Kreasi Indonesia",
+        "title": "Adisher Leather Website",
+        "description": "Responsive leather retail and company profile website built with WordPress and Elementor.",
+        "overview": "Developed a responsive company profile and leather retail showcase website for PT Adisher Kreasi Indonesia using WordPress and Elementor, complete with hosting, security, and corporate email setup.",
+        "features": [
+          "Custom responsive catalog & brand showcase with Elementor",
+          "Hosting environment optimization, SSL & security configuration",
+          "Corporate email system setup with automated scheduled backups"
+        ],
+        "tags": ["WordPress", "Elementor", "Hosting", "SSL"],
+        "detailText": "View Detail",
+        "detailUrl": "page/project.html?id=adisher-leather"
       },
       {
         "id": "otomod-portal",
