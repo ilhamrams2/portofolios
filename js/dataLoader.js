@@ -325,9 +325,10 @@ document.addEventListener("DOMContentLoaded", function () {
                                     <h3 class="project-card-title">${escapeHtml(prj.title)}</h3>
                                     <p class="project-card-desc">${escapeHtml(prj.description)}</p>
                                     <div class="project-tags-row">${tagsHtml}</div>
-                                    <div class="project-card-action">
-                                      <a href="${escapeHtml(prj.detailUrl || "page/project.html")}" class="btn-project-detail">${escapeHtml(prj.detailText || "View Detail")}</a>
-                                    </div>
+                                      <div class="project-card-action">
+                                        <a href="${escapeHtml(prj.detailUrl || "page/project.html")}" class="btn-project-detail">${escapeHtml(prj.detailText || "View Detail")}</a>
+                                        ${prj.externalUrl ? `<a href="${escapeHtml(prj.externalUrl)}" target="_blank" rel="noopener noreferrer" class="btn-project-visit">${escapeHtml(prj.externalLabel || "Visit Site")} &nearr;</a>` : ""}
+                                      </div>
                                   </div>
                                 </div>`;
                         })

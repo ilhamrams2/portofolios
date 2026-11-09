@@ -108,33 +108,56 @@
         <a href="../index.html#projects" class="ecom-back-link">&larr; Back to Projects</a>
       </div>
 
-      <!-- Main E-Commerce Product Showcase (Left Gallery + Right Product Info) -->
+      <!-- Main E-Commerce Product Showcase (Left Interactive Scrollable Gallery + Right Product Info) -->
       <div class="ecom-product-grid" data-aos="fade-up" data-aos-duration="750">
-        <!-- Left Column: Product Gallery -->
+        <!-- Left Column: Interactive Scrollable Browser Gallery -->
         <div class="ecom-gallery-col">
           <div class="ecom-main-image-card">
-            <div class="ecom-main-img-wrap">
+            <!-- Mini Browser Header Bar -->
+            <div class="ecom-browser-bar">
+              <div class="ecom-browser-dots" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="ecom-browser-url" id="browser-url-bar">
+                politeknik.prestasiprima.ac.id
+              </div>
+              <a
+                href="#"
+                id="browser-visit-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="ecom-browser-visit d-none">
+                Visit Site &nearr;
+              </a>
+            </div>
+
+            <!-- Scrollable Full-Page Viewport -->
+            <div class="ecom-main-img-wrap" id="preview-scroll-box">
               <img
                 id="detail-image"
                 src="../images/projects/screencapture-172-16-11-30-3000-2026-11-09-07_55_22.png"
                 alt="Project Preview"
-                class="ecom-main-img view-full" />
-              <span class="project-cat-badge" id="detail-cat-pill">Campus</span>
-              <span class="ecom-view-label" id="ecom-view-badge">Hero Section</span>
+                class="ecom-main-img-scrollable" />
+            </div>
+
+            <!-- Bottom Status / Scroll Hint Bar -->
+            <div class="ecom-preview-footer">
+              <span class="ecom-view-pill" id="ecom-view-badge">Hero Section</span>
+              <span class="ecom-scroll-hint">&#8597; Scroll inside image to explore full page</span>
             </div>
           </div>
 
-          <!-- Thumbnail Strip (Interactive View Modes) -->
+          <!-- Thumbnail Strip (Quick Scroll Jump Buttons) -->
           <div class="ecom-thumb-strip" id="detail-thumbs">
-            <button type="button" class="ecom-thumb-item active" data-view="view-full" data-label="Hero Section">
+            <button type="button" class="ecom-thumb-item active" data-scroll="top" data-label="Hero Section">
               <img src="../images/projects/screencapture-172-16-11-30-3000-2026-11-09-07_55_22.png" alt="Hero View" class="thumb-img view-full" />
               <span class="thumb-caption">Hero Section</span>
             </button>
-            <button type="button" class="ecom-thumb-item" data-view="view-hero" data-label="Content Section">
+            <button type="button" class="ecom-thumb-item" data-scroll="middle" data-label="Main Content">
               <img src="../images/projects/screencapture-172-16-11-30-3000-2026-11-09-07_55_22.png" alt="Content View" class="thumb-img view-hero" />
               <span class="thumb-caption">Main Content</span>
             </button>
-            <button type="button" class="ecom-thumb-item" data-view="view-detail" data-label="Bottom Section">
+            <button type="button" class="ecom-thumb-item" data-scroll="bottom" data-label="Footer &amp; Info">
               <img src="../images/projects/screencapture-172-16-11-30-3000-2026-11-09-07_55_22.png" alt="Bottom View" class="thumb-img view-detail" />
               <span class="thumb-caption">Footer &amp; Info</span>
             </button>
@@ -212,16 +235,16 @@
 
             <!-- CTA Actions -->
             <div class="ecom-action-box">
-              <a href="../index.html#contact" class="btn-hero-explore ecom-primary-btn">
-                Request Similar Project
-              </a>
               <a
                 href="#"
                 id="detail-external-btn"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="cert-btn-secondary ecom-secondary-btn d-none">
-                Open Figma Prototype &nearr;
+                class="btn-hero-explore ecom-primary-btn d-none">
+                Visit Site &nearr;
+              </a>
+              <a href="../index.html#contact" class="cert-btn-secondary ecom-secondary-btn" id="detail-inquire-btn">
+                Request Similar Project
               </a>
             </div>
           </div>
@@ -304,7 +327,9 @@
             "Interactive 360° virtual school tour & admission info",
             "Responsive layout built with Laravel, Tailwind CSS & MySQL"
           ],
-          tags: ["Laravel", "Tailwind CSS", "MySQL"]
+          tags: ["Laravel", "Tailwind CSS", "MySQL"],
+          externalUrl: "https://sma.prestasiprima.sch.id/",
+          externalLabel: "Visit Site"
         },
         {
           id: "smk-prestasi-prima",
@@ -323,7 +348,9 @@
             "360° virtual campus tour, PTN alumni & industry partner sections",
             "CMS dashboard for school news, events & announcements"
           ],
-          tags: ["Laravel", "Tailwind CSS", "MySQL"]
+          tags: ["Laravel", "Tailwind CSS", "MySQL"],
+          externalUrl: "https://smk.prestasiprima.sch.id/",
+          externalLabel: "Visit Site"
         },
         {
           id: "labsco-arena",
@@ -342,7 +369,9 @@
             "Product & service showcase for sports timing and LED scoreboards",
             "Responsive frontend built with HTML, Bootstrap, CSS & JavaScript"
           ],
-          tags: ["Figma", "Bootstrap", "JavaScript", "HTML/CSS"]
+          tags: ["Figma", "Bootstrap", "JavaScript", "HTML/CSS"],
+          externalUrl: "https://labsco-arena.co.id/",
+          externalLabel: "Visit Site"
         },
         {
           id: "adisher-leather",
@@ -361,7 +390,9 @@
             "Hosting environment optimization, SSL & security configuration",
             "Corporate email system setup with automated scheduled backups"
           ],
-          tags: ["WordPress", "Elementor", "Hosting", "SSL"]
+          tags: ["WordPress", "Elementor", "Hosting", "SSL"],
+          externalUrl: "https://adisherleather.com/",
+          externalLabel: "Visit Site"
         },
         {
           id: "otomod-portal",
@@ -387,16 +418,29 @@
       ];
 
       function resolveImagePath(imgPath) {
-        if (!imgPath) return "../images/paramonth.PNG";
+        if (!imgPath) return "../images/projects/screencapture-172-16-11-30-3000-2026-11-09-07_55_22.png";
         if (imgPath.startsWith("http") || imgPath.startsWith("../")) return imgPath;
         return "../" + imgPath;
       }
 
-      function initGalleryThumbnails(imgSrc, projectTitle) {
-        const mainImg = document.getElementById("detail-image");
+      function formatDisplayUrl(url, fallbackTitle) {
+        if (!url) return fallbackTitle.toLowerCase().replace(/[^a-z0-9]+/g, "-") + ".local";
+        try {
+          const parsed = new URL(url);
+          return parsed.hostname.replace(/^www\./, "");
+        } catch (e) {
+          return url;
+        }
+      }
+
+      function initScrollableGallery(imgSrc, projectTitle) {
+        const scrollBox = document.getElementById("preview-scroll-box");
         const viewBadge = document.getElementById("ecom-view-badge");
         const thumbWrap = document.getElementById("detail-thumbs");
-        if (!thumbWrap || !mainImg) return;
+        if (!thumbWrap || !scrollBox) return;
+
+        // Reset scroll to top
+        scrollBox.scrollTop = 0;
 
         const thumbImgs = thumbWrap.querySelectorAll(".thumb-img");
         thumbImgs.forEach((img) => {
@@ -404,21 +448,40 @@
           img.alt = projectTitle;
         });
 
-        const thumbBtns = thumbWrap.querySelectorAll(".ecom-thumb-item");
-        thumbBtns.forEach((btn) => {
-          btn.classList.remove("active");
-          if (btn.getAttribute("data-view") === "view-full") {
-            btn.classList.add("active");
-          }
+        const thumbBtns = Array.from(thumbWrap.querySelectorAll(".ecom-thumb-item"));
+        thumbBtns.forEach((btn, idx) => {
+          btn.classList.toggle("active", idx === 0);
           btn.onclick = function () {
             thumbBtns.forEach((b) => b.classList.remove("active"));
             btn.classList.add("active");
-            const viewClass = btn.getAttribute("data-view") || "view-full";
-            const label = btn.getAttribute("data-label") || "Full Preview";
-            mainImg.className = "ecom-main-img " + viewClass;
+            const pos = btn.getAttribute("data-scroll");
+            const label = btn.getAttribute("data-label") || "Hero Section";
+            const maxScroll = Math.max(0, scrollBox.scrollHeight - scrollBox.clientHeight);
+            let targetTop = 0;
+            if (pos === "middle") targetTop = maxScroll * 0.45;
+            else if (pos === "bottom") targetTop = maxScroll;
+            scrollBox.scrollTo({ top: targetTop, behavior: "smooth" });
             if (viewBadge) viewBadge.textContent = label;
           };
         });
+
+        // Update active thumbnail & badge when user scrolls manually
+        scrollBox.onscroll = function () {
+          const maxScroll = scrollBox.scrollHeight - scrollBox.clientHeight;
+          if (maxScroll <= 10) return;
+          const ratio = scrollBox.scrollTop / maxScroll;
+          let activeIdx = 0;
+          let label = "Hero Section";
+          if (ratio > 0.72) {
+            activeIdx = 2;
+            label = "Footer & Info";
+          } else if (ratio > 0.25) {
+            activeIdx = 1;
+            label = "Main Content";
+          }
+          thumbBtns.forEach((b, i) => b.classList.toggle("active", i === activeIdx));
+          if (viewBadge) viewBadge.textContent = label;
+        };
       }
 
       function renderProjectDetail(projects) {
@@ -436,7 +499,8 @@
         const titleEl = document.getElementById("detail-title");
         const subtitleEl = document.getElementById("detail-subtitle");
         const imageEl = document.getElementById("detail-image");
-        const catPillEl = document.getElementById("detail-cat-pill");
+        const browserUrlBar = document.getElementById("browser-url-bar");
+        const browserVisitLink = document.getElementById("browser-visit-link");
         const clientEl = document.getElementById("detail-client");
         const roleEl = document.getElementById("detail-role");
         const yearEl = document.getElementById("detail-year");
@@ -444,6 +508,7 @@
         const featuresEl = document.getElementById("detail-features");
         const tagsEl = document.getElementById("detail-tags");
         const externalBtn = document.getElementById("detail-external-btn");
+        const inquireBtn = document.getElementById("detail-inquire-btn");
         const relatedGrid = document.getElementById("related-projects-grid");
 
         if (crumbCat) crumbCat.textContent = project.badge;
@@ -454,15 +519,25 @@
         if (imageEl) {
           imageEl.src = resolvedImg;
           imageEl.alt = project.title;
-          imageEl.className = "ecom-main-img view-full";
         }
-        if (catPillEl) catPillEl.textContent = project.badge;
+        if (browserUrlBar) {
+          browserUrlBar.textContent = formatDisplayUrl(project.externalUrl, project.title);
+        }
+        if (browserVisitLink) {
+          if (project.externalUrl) {
+            browserVisitLink.href = project.externalUrl;
+            browserVisitLink.innerHTML = (project.externalLabel || "Visit Site") + " &nearr;";
+            browserVisitLink.classList.remove("d-none");
+          } else {
+            browserVisitLink.classList.add("d-none");
+          }
+        }
         if (clientEl) clientEl.textContent = project.client || "Institutional Project";
         if (roleEl) roleEl.textContent = project.role;
         if (yearEl) yearEl.textContent = project.year;
         if (overviewEl) overviewEl.textContent = project.overview || project.description;
 
-        initGalleryThumbnails(resolvedImg, project.title);
+        initScrollableGallery(resolvedImg, project.title);
 
         if (featuresEl && Array.isArray(project.features)) {
           featuresEl.innerHTML = project.features
@@ -483,13 +558,15 @@
             .join("");
         }
 
-        if (externalBtn) {
+        if (externalBtn && inquireBtn) {
           if (project.externalUrl) {
             externalBtn.href = project.externalUrl;
-            externalBtn.innerHTML = (project.externalLabel || "Visit Project") + " &nearr;";
+            externalBtn.innerHTML = (project.externalLabel || "Visit Site") + " &nearr;";
             externalBtn.classList.remove("d-none");
+            inquireBtn.className = "cert-btn-secondary ecom-secondary-btn";
           } else {
             externalBtn.classList.add("d-none");
+            inquireBtn.className = "btn-hero-explore ecom-primary-btn";
           }
         }
 
@@ -502,6 +579,9 @@
               const itemTags = (item.tags || [])
                 .map((t) => `<span class="project-tech-tag">${t}</span>`)
                 .join("");
+              const visitHtml = item.externalUrl
+                ? `<a href="${item.externalUrl}" target="_blank" rel="noopener noreferrer" class="btn-project-visit">${item.externalLabel || "Visit Site"} &nearr;</a>`
+                : "";
               return `
                 <div class="project-showcase-card">
                   <div class="project-thumb-wrap">
@@ -518,6 +598,7 @@
                     <div class="project-tags-row">${itemTags}</div>
                     <div class="project-card-action">
                       <a href="?id=${item.id}" class="btn-project-detail">View Detail</a>
+                      ${visitHtml}
                     </div>
                   </div>
                 </div>

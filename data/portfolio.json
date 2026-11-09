@@ -248,7 +248,9 @@
         ],
         "tags": ["Laravel", "Tailwind CSS", "MySQL"],
         "detailText": "View Detail",
-        "detailUrl": "page/project.html?id=sma-prestasi-prima"
+        "detailUrl": "page/project.html?id=sma-prestasi-prima",
+        "externalUrl": "https://sma.prestasiprima.sch.id/",
+        "externalLabel": "Visit Site"
       },
       {
         "id": "smk-prestasi-prima",
@@ -268,7 +270,9 @@
         ],
         "tags": ["Laravel", "Tailwind CSS", "MySQL"],
         "detailText": "View Detail",
-        "detailUrl": "page/project.html?id=smk-prestasi-prima"
+        "detailUrl": "page/project.html?id=smk-prestasi-prima",
+        "externalUrl": "https://smk.prestasiprima.sch.id/",
+        "externalLabel": "Visit Site"
       },
       {
         "id": "labsco-arena",
@@ -288,7 +292,9 @@
         ],
         "tags": ["Figma", "Bootstrap", "JavaScript", "HTML/CSS"],
         "detailText": "View Detail",
-        "detailUrl": "page/project.html?id=labsco-arena"
+        "detailUrl": "page/project.html?id=labsco-arena",
+        "externalUrl": "https://labsco-arena.co.id/",
+        "externalLabel": "Visit Site"
       },
       {
         "id": "adisher-leather",
@@ -308,7 +314,9 @@
         ],
         "tags": ["WordPress", "Elementor", "Hosting", "SSL"],
         "detailText": "View Detail",
-        "detailUrl": "page/project.html?id=adisher-leather"
+        "detailUrl": "page/project.html?id=adisher-leather",
+        "externalUrl": "https://adisherleather.com/",
+        "externalLabel": "Visit Site"
       },
       {
         "id": "otomod-portal",
