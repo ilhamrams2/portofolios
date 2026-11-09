@@ -25,7 +25,7 @@
     "greeting": "Hello I'm",
     "name": "Ilham Ramadan",
     "title": "Building Digital<br />Solutions.",
-    "description": "Software Engineering graduate with professional experience in web development, UI/UX design, and educational technology using Laravel, PHP, Next.js, Tailwind CSS, and WordPress.",
+    "description": "Software developer crafting modern web applications, institutional systems, and clean interfaces with Laravel, Next.js, and Tailwind CSS.",
     "primaryCta": {
       "label": "Explore My Work",
       "href": "#projects"
@@ -42,23 +42,23 @@
   "techStack": {
     "eyebrow": "Tech Stack",
     "heading": "Core Technologies & Tools",
-    "subtitle": "The core technologies and tools I use to build institutional websites, web-based systems, and user-friendly digital solutions.",
+    "subtitle": "Technologies I use daily to build fast, well-structured, and scalable web applications.",
     "primaryBadge": "Primary Stack : Laravel + Next.js + Tailwind + MySQL",
     "categories": [
       {
-        "title": "Backend & Web Development",
-        "description": "Building robust server-side applications, CMS, and REST APIs",
+        "title": "Backend & Web",
+        "description": "Server-side apps, CMS & REST APIs",
         "items": [
           "Laravel & Filament",
           "PHP 8.x",
           "MySQL",
-          "REST API Development",
-          "WordPress & Elementor"
+          "RESTful API",
+          "WordPress"
         ]
       },
       {
         "title": "Frontend & Mobile",
-        "description": "Clean, responsive & interactive user interfaces",
+        "description": "Responsive & interactive user interfaces",
         "items": [
           "Next.js & JavaScript",
           "Tailwind CSS",
@@ -68,14 +68,14 @@
         ]
       },
       {
-        "title": "UI/UX, Workflow & Tools",
-        "description": "Prototyping, version control, testing & server management",
+        "title": "UI/UX & Tools",
+        "description": "Design, version control & deployment",
         "items": [
-          "Figma & Canva (UI/UX)",
+          "Figma & Canva",
           "Git & GitHub",
           "Postman",
-          "Web Hosting, Domain & Email",
-          "Problem Solving & Mentoring"
+          "Hosting & Domain",
+          "Elementor"
         ]
       }
     ]
@@ -83,16 +83,16 @@
   "profile": {
     "eyebrow": "Profile",
     "heading": "About Me & Journey.",
-    "subtitle": "Software Engineering graduate (GPA 3.89/4.00) with professional experience in web development, UI/UX design, WordPress development, and educational technology.",
+    "subtitle": "Software Engineering background combined with hands-on experience building digital systems for schools and businesses.",
     "bioCard": {
-      "statusBadge": "Based in Bogor, Indonesia \u2022 Open for Projects",
+      "statusBadge": "Based in Bogor \u2022 Open for Projects",
       "title": "Web Developer, UI/UX & WordPress Developer",
       "paragraphs": [
-        "Software Engineering graduate with professional experience in web development, UI/UX design, and educational technology. Experienced in developing institutional websites and web-based systems using <strong>Laravel, PHP, JavaScript, Next.js, Tailwind CSS, and MySQL</strong>.",
-        "Also experienced in UI/UX prototyping in Figma, WordPress development, and mentoring students in programming and software projects. Passionate about building user-friendly, scalable, and impactful digital solutions."
+        "Hello! I'm <strong>Ilham Ramadan</strong>, a Software Engineering graduate experienced in building institutional websites and web applications using <strong>Laravel, PHP, Next.js, and Tailwind CSS</strong>.",
+        "I also handle UI/UX prototyping in Figma, WordPress development, and student mentoring in software projects."
       ],
-      "specialtyLabel": "Role & Specialization",
-      "specialtyRole": "Web Developer \u2022 UI/UX \u2022 WordPress Developer",
+      "specialtyLabel": "Specialization",
+      "specialtyRole": "Web Developer \u2022 UI/UX \u2022 WordPress",
       "cta": {
         "label": "Request CV / Resume",
         "href": "#contact"
@@ -102,7 +102,7 @@
       {
         "number": "3.89",
         "title": "GPA / 4.00",
-        "subtitle": "B.S. Software Engineering"
+        "subtitle": "Software Engineering"
       },
       {
         "number": "1st",
@@ -112,62 +112,44 @@
       {
         "number": "6+",
         "title": "Featured Projects",
-        "subtitle": "School, Web App & Portals"
+        "subtitle": "School & Web Systems"
       },
       {
         "number": "BNSP",
         "title": "Certified Analyst",
-        "subtitle": "Program Analyst (2025-2028)"
+        "subtitle": "Valid 2025 \u2013 2028"
       }
     ],
     "timelineHeader": {
-      "heading": "Experience, Education & Certifications",
-      "subtitle": "Professional career history, academic background & certifications"
+      "heading": "Experience & Education Timeline",
+      "subtitle": "Career history & academic background"
     },
     "timelineItems": [
       {
         "period": "Jul 2025 - Now",
-        "type": "Full-Time / Education",
-        "title": "Laboratory Instructor",
+        "type": "Full-Time",
+        "title": "Laboratory Instructor & Web Developer",
         "organization": "SMK Prestasi Prima",
-        "description": "Developed & maintained 3 institutional websites (SMA, SMK, Polytechnic) using Laravel, Tailwind CSS, and Next.js. Built OrensPro extracurricular attendance system with QR Code & GPS verification, managed hosting/domains/email systems, and mentored PPLG students.",
-        "tags": ["Laravel", "Next.js", "Tailwind CSS", "QR & GPS System", "Mentoring"],
+        "description": "Built 3 institutional websites (SMA, SMK, Polytechnic), developed OrensPro QR/GPS attendance system, and mentored PPLG students.",
+        "tags": ["Laravel", "Next.js", "Tailwind CSS", "MySQL"],
         "active": true
       },
       {
-        "period": "May 2025 - Jun 2025",
+        "period": "Jul 2024 - Jun 2025",
         "type": "Freelance",
-        "title": "UI/UX Designer",
-        "organization": "Labsco Arena Technology (Freelance)",
-        "description": "Designed UI/UX interfaces to improve usability and user experience. Created wireframes, prototypes, and mockups using Figma for the Labsco Arena Teknologi company profile website.",
-        "tags": ["Figma", "UI/UX Design", "Wireframing", "Prototyping"],
+        "title": "UI/UX, Frontend & WordPress Developer",
+        "organization": "Labsco Arena Technology & PT Adisher Kreasi Indonesia",
+        "description": "Designed UI/UX prototypes in Figma and built responsive company profile websites using WordPress, Elementor, and Bootstrap.",
+        "tags": ["Figma", "WordPress", "Bootstrap", "JavaScript"],
         "active": false
       },
       {
-        "period": "Apr 2025 - May 2025",
-        "type": "Freelance",
-        "title": "WordPress Developer",
-        "organization": "PT Adisher Kreasi Indonesia (Freelance)",
-        "description": "Developed a responsive company profile and retail website using WordPress and Elementor. Set up hosting environment for optimal performance & security, and configured company email with scheduled backups.",
-        "tags": ["WordPress", "Elementor", "Hosting & Security", "Company Email"],
-        "active": false
-      },
-      {
-        "period": "Jul 2024 - Nov 2024",
-        "type": "Freelance",
-        "title": "UI/UX & Frontend Developer",
-        "organization": "Labsco Arena Technology (Freelance)",
-        "description": "Designed user-friendly interfaces, wireframes, and prototypes, and collaborated with the team to develop responsive and interactive frontend components using HTML, Bootstrap, CSS, and JavaScript.",
-        "tags": ["HTML5 & CSS3", "Bootstrap", "JavaScript", "UI/UX"],
-        "active": false
-      },
-      {
-        "period": "Sep 2022 - Sep 2026",
-        "type": "Education & Certificates",
+        "period": "2022 - 2026",
+        "type": "Education",
         "title": "Bachelor of Software Engineering (GPA: 3.89/4.00)",
         "organization": "University Bina Sarana Informatika (UBSI)",
-        "description": "1st Place Web Development Bootcamp 2024. Certified Program Analyst in Software Development by BNSP (Valid 2025-2028) & Certified PCAP: Programming Essentials in Python by Cisco Networking Academy (2023).",
-        "tags": ["GPA 3.89/4.00", "BNSP Program Analyst", "Cisco PCAP Python", "1st Place Bootcamp"],
+        "description": "1st Place Web Development Bootcamp 2024, BNSP Certified Program Analyst (2025\u20132028), and Cisco PCAP Python certified.",
+        "tags": ["GPA 3.89", "BNSP Certified", "1st Place Bootcamp"],
         "active": false
       }
     ]
@@ -175,17 +157,17 @@
   "services": {
     "eyebrow": "Services",
     "heading": "Digital Solutions I Provide.",
-    "subtitle": "Web development, custom information systems, UI/UX design, and WordPress & hosting solutions tailored for educational institutions and modern businesses.",
+    "subtitle": "Web development, UI/UX design, and CMS solutions for schools and modern businesses.",
     "items": [
       {
         "number": "01",
         "brandTag": "Portfel. Service",
-        "title": "Institutional Website & Web System",
-        "description": "Development of official school/campus websites (High School, Vocational, Polytechnic) and web-based information systems including QR Code & GPS attendance, digital libraries, and news portals.",
+        "title": "Web Application & Custom System",
+        "description": "Custom web systems including school portals, QR/GPS attendance, digital libraries, and admin dashboards.",
         "features": [
-          "QR Code Scanning & GPS Verification System",
-          "CMS Panel & Admin Dashboard (Laravel / Filament)",
-          "RESTful API & Mobile App Backend Integration"
+          "QR Code & GPS Attendance System",
+          "CMS & Multi-Role Admin Dashboard",
+          "RESTful API & Database Architecture"
         ],
         "techFooter": "Laravel \u2022 Next.js \u2022 Filament \u2022 MySQL",
         "featuredDark": true
@@ -193,27 +175,27 @@
       {
         "number": "02",
         "brandTag": "Portfel. Service",
-        "title": "UI/UX Design & Frontend Development",
-        "description": "Designing modern and intuitive user interfaces (UI/UX) in Figma\u2014from wireframes, mockups, and interactive prototypes to clean, responsive frontend implementation.",
+        "title": "UI/UX Design & Frontend",
+        "description": "Clean, intuitive interface design in Figma translated into responsive, mobile-friendly frontend code.",
         "features": [
-          "Wireframing, Mockups & Interactive Prototyping in Figma",
-          "Usability Enhancement & Modern Visual Systems",
-          "Responsive Frontend (Tailwind CSS, Bootstrap 5, Next.js)"
+          "Wireframes & Interactive Prototypes",
+          "Modern, Accessible Visual Design",
+          "Responsive Tailwind & Bootstrap Code"
         ],
-        "techFooter": "Figma \u2022 Canva \u2022 Tailwind CSS \u2022 Bootstrap 5",
+        "techFooter": "Figma \u2022 Tailwind CSS \u2022 Bootstrap 5",
         "featuredDark": false
       },
       {
         "number": "03",
         "brandTag": "Portfel. Service",
-        "title": "WordPress & Hosting Infrastructure",
-        "description": "Building responsive company profile and retail websites using WordPress & Elementor, complete with web hosting setup, domain management, corporate email, and scheduled backups.",
+        "title": "WordPress & Hosting Setup",
+        "description": "Fast company profile and retail websites with full hosting, domain, and corporate email configuration.",
         "features": [
-          "Responsive Company Profile & Retail Website (Elementor)",
-          "Web Hosting, Domain Setup & Security Optimization",
-          "Corporate/Institutional Email Setup & Scheduled Backups"
+          "Custom WordPress & Elementor Sites",
+          "Hosting, Domain & SSL Configuration",
+          "Corporate Email & Automated Backups"
         ],
-        "techFooter": "WordPress \u2022 Elementor \u2022 Hosting & Email Setup",
+        "techFooter": "WordPress \u2022 Elementor \u2022 Hosting",
         "featuredDark": false
       }
     ]
@@ -229,153 +211,196 @@
     ],
     "items": [
       {
+        "id": "prestasi-prima-polytechnic",
         "category": "school",
         "badge": "Campus",
         "image": "images/paramonth.PNG",
         "role": "Web Developer",
         "year": "2026",
-        "title": "Prestasi Prima Polytechnic \u2013 Institutional Website",
-        "description": "Developed a modern institutional website to present academic programs, campus information, and digital content with a responsive user interface.",
+        "client": "Politeknik Prestasi Prima",
+        "title": "Prestasi Prima Polytechnic",
+        "description": "Modern campus website showcasing academic programs and institutional information.",
+        "overview": "Developed a modern institutional website for Politeknik Prestasi Prima to present academic study programs, campus facilities, admission information, and digital news with a fast, responsive user interface.",
+        "features": [
+          "Responsive study program & campus directory pages",
+          "Fast page performance and SEO-friendly structure",
+          "Clean, accessible UI built with Next.js & Tailwind CSS"
+        ],
         "tags": ["Next.js", "Tailwind CSS"],
         "detailText": "View Detail",
-        "detailUrl": "page/project.html"
+        "detailUrl": "page/project.html?id=prestasi-prima-polytechnic"
       },
       {
+        "id": "orens-absence",
         "category": "webapp",
         "badge": "Web App",
         "image": "images/elbria.PNG",
         "role": "Full-Stack Developer",
         "year": "2026",
-        "title": "Orens Absence \u2013 Extracurricular Attendance System",
-        "description": "Web-based attendance system for extracurricular activities utilizing QR Code scanning and GPS verification for accurate, secure attendance tracking and reporting.",
-        "tags": ["Laravel", "Filament", "Tailwind", "MySQL"],
+        "client": "SMK Prestasi Prima",
+        "title": "Orens Absence System",
+        "description": "Extracurricular attendance web app with QR Code scanning and GPS verification.",
+        "overview": "A web-based extracurricular attendance platform (OrensPro) utilizing QR Code scanning and real-time GPS location verification to ensure accurate student attendance tracking and automated reporting.",
+        "features": [
+          "Dynamic QR Code scanning & GPS radius verification",
+          "Real-time attendance session management",
+          "Filament admin dashboard with automated attendance reports"
+        ],
+        "tags": ["Laravel", "Filament", "Tailwind CSS", "MySQL"],
         "detailText": "View Detail",
-        "detailUrl": "page/project.html"
+        "detailUrl": "page/project.html?id=orens-absence"
       },
       {
+        "id": "sma-prestasi-prima",
         "category": "school",
         "badge": "School",
         "image": "images/myweb/labsco.png",
         "role": "Full-Stack Developer",
         "year": "2025",
-        "title": "SMA Prestasi Prima \u2013 School Website",
-        "description": "Built and managed the school profile website to deliver academic information, announcements, and institutional content.",
+        "client": "SMA Prestasi Prima",
+        "title": "SMA Prestasi Prima Website",
+        "description": "Official high school profile portal for academic news and announcements.",
+        "overview": "Built and maintained the official school profile website for SMA Prestasi Prima to deliver academic announcements, student achievements, and institutional information.",
+        "features": [
+          "Dynamic news, events & achievement gallery CMS",
+          "Mobile-responsive layout with Tailwind CSS",
+          "Structured MySQL database & content management panel"
+        ],
         "tags": ["Laravel", "Tailwind CSS", "MySQL"],
         "detailText": "View Detail",
-        "detailUrl": "page/project.html"
+        "detailUrl": "page/project.html?id=sma-prestasi-prima"
       },
       {
+        "id": "smk-prestasi-prima",
         "category": "school",
         "badge": "School",
         "image": "images/market.PNG",
         "role": "Full-Stack Developer",
         "year": "2025",
-        "title": "SMK Prestasi Prima \u2013 School Website",
-        "description": "Developed and maintained the official school website, providing institutional information, academic content, and digital services for students and the public.",
+        "client": "SMK Prestasi Prima",
+        "title": "SMK Prestasi Prima Website",
+        "description": "Vocational school website providing academic content and student digital services.",
+        "overview": "Developed and maintained the official website for SMK Prestasi Prima, providing vocational program profiles, academic updates, and digital information services for students and parents.",
+        "features": [
+          "Vocational department & facility showcase pages",
+          "Easy-to-use CMS dashboard for school administrators",
+          "Optimized query performance & server deployment"
+        ],
         "tags": ["Laravel", "Tailwind CSS", "MySQL"],
         "detailText": "View Detail",
-        "detailUrl": "page/project.html"
+        "detailUrl": "page/project.html?id=smk-prestasi-prima"
       },
       {
+        "id": "alinea-library",
         "category": "webapp",
         "badge": "Web App",
         "image": "images/cargoo.PNG",
         "role": "CMS & API Developer",
         "year": "2024",
-        "title": "Alinea \u2013 Library Management System",
-        "description": "Mobile-based online library management system. Developed the CMS and REST API enabling seamless book borrowing and return processes through QR code scanning.",
+        "client": "Alinea Digital Library",
+        "title": "Alinea Library System",
+        "description": "Online library CMS and REST API with QR code book borrowing and returns.",
+        "overview": "Alinea is a mobile-connected online library management system. I developed the web CMS dashboard and RESTful API to power seamless book cataloging, borrowing, and return workflows via QR code scanning.",
+        "features": [
+          "RESTful API integration for mobile library application",
+          "QR code-based book borrowing & return workflow",
+          "Web CMS for book inventory & member management"
+        ],
         "tags": ["Laravel 10", "Bootstrap 5", "MySQL", "REST API"],
         "detailText": "View Detail",
-        "detailUrl": "page/project.html"
+        "detailUrl": "page/project.html?id=alinea-library"
       },
       {
+        "id": "otomod-portal",
         "category": "others",
-        "badge": "1st Place Bootcamp",
+        "badge": "1st Place",
         "image": "images/myweb/otomod.png",
-        "role": "UI/UX & Full-Stack Developer",
-        "year": "May - Jun 2024",
-        "title": "Otomod.com \u2013 News Portal Website",
-        "description": "Automotive news portal developed during Software Development Bootcamp (Won 1st Place). Worked as UI/UX designer in Figma and full-stack developer.",
+        "role": "UI/UX & Full-Stack",
+        "year": "2024",
+        "client": "UBSI Software Dev Bootcamp",
+        "title": "Otomod.com News Portal",
+        "description": "1st Place Bootcamp automotive news portal designed in Figma and built with Laravel.",
+        "overview": "Otomod.com is an automotive news and review portal developed during the Software Development Bootcamp, where it won 1st Place. I led both the UI/UX design in Figma and full-stack Laravel implementation.",
+        "features": [
+          "1st Place Winner at Software Development Bootcamp 2024",
+          "Complete UI/UX wireframe & high-fidelity prototype in Figma",
+          "Full-stack article management, categories & reader interface"
+        ],
         "tags": ["Laravel 9", "Bootstrap 5", "MySQL", "Figma"],
-        "detailText": "Visit Figma",
-        "detailUrl": "https://surl.li/ujtkcp"
+        "detailText": "View Detail",
+        "detailUrl": "page/project.html?id=otomod-portal",
+        "externalUrl": "https://surl.li/ujtkcp",
+        "externalLabel": "Open Figma Prototype"
       }
     ]
   },
   "contact": {
     "eyebrow": "Contact Me",
     "heading": "Let's Discuss Your Next<br />Digital Solution.",
-    "description": "Interested in building an institutional website, a Laravel & Next.js web application, UI/UX design in Figma, or a WordPress website? Feel free to send a message or reach out via the contacts below.",
+    "description": "Have a project in mind or want to collaborate? Reach out directly or send a quick message below.",
     "directEmail": {
-      "label": "Direct Email (Bogor, Indonesia)",
+      "label": "Direct Email",
       "email": "ilhamrmdn.work@gmail.com",
       "copyButtonText": "Copy"
     },
     "socialProfile": {
-      "label": "LinkedIn & Phone (+62-895-3016-4170)",
+      "label": "LinkedIn Profile",
       "display": "linkedin.com/in/ilham-ramadan-079185213",
       "url": "https://www.linkedin.com/in/ilham-ramadan-079185213/",
-      "handle": "@ilham-ramadan"
+      "handle": "Bogor, ID"
     },
     "brandMini": "Portfel.",
     "form": {
       "title": "Send a Quick Message",
-      "subtitle": "Fill out your project details or message below.",
+      "subtitle": "Fill out your project details below.",
       "nameLabel": "Your Name",
       "namePlaceholder": "Full name / Organization",
       "emailLabel": "Email Address",
       "emailPlaceholder": "you@example.com",
       "categoryLabel": "Project Category",
       "categories": [
-        "Institutional / School Website (Laravel / Next.js)",
-        "Custom Web Application (QR Attendance / CMS / API)",
-        "UI/UX Design & Prototyping (Figma)",
-        "WordPress & Company Profile Website",
-        "Other Digital Solution"
+        "School / Campus Website",
+        "Custom Web Application",
+        "UI/UX Design (Figma)",
+        "WordPress Website",
+        "Other Inquiry"
       ],
       "messageLabel": "Message / Project Brief",
-      "messagePlaceholder": "Tell me about the website or digital system you want to build...",
-      "responseNote": "Average response within 24 business hours \u2022 WhatsApp: +62-895-3016-4170",
+      "messagePlaceholder": "Tell me briefly about your project...",
+      "responseNote": "Responds within 24 hours",
       "submitText": "Send Message"
     }
   },
   "certificates": {
-    "eyebrow": "Training & License Certificates",
-    "heading": "Verified Credentials & Achievements.",
-    "subtitle": "Professional competency certifications, technical credentials, and software engineering awards.",
-    "primaryBadge": "BNSP Certified \u2022 Cisco Python \u2022 1st Place Bootcamp",
+    "eyebrow": "Certificates",
+    "heading": "Licenses & Achievements.",
+    "subtitle": "Verified professional certifications and bootcamp awards.",
     "items": [
       {
         "number": "01",
-        "category": "license",
-        "badge": "Professional License",
-        "period": "Valid 2025 \u2013 2028",
-        "title": "Certified Program Analyst in Software Development",
-        "issuer": "BNSP (Badan Nasional Sertifikasi Profesi)",
-        "description": "National professional competency certification validating expertise in software requirements analysis, database design, object-oriented program specification, and enterprise software engineering standards.",
-        "tags": ["BNSP National License", "Program Analyst", "System Architecture", "Software Engineering"],
+        "period": "2025 \u2013 2028",
+        "title": "Certified Program Analyst",
+        "issuer": "BNSP Indonesia",
+        "description": "National professional license in software development, system analysis, and database architecture.",
+        "footer": "Software Development \u2022 Verified",
         "featuredDark": true
       },
       {
         "number": "02",
-        "category": "technical",
-        "badge": "Technical Certificate",
-        "period": "Issued 2023",
-        "title": "PCAP: Programming Essentials in Python",
-        "issuer": "Cisco Networking Academy & OpenEDG Python Institute",
-        "description": "Comprehensive certification covering Python programming fundamentals, data structures, modular architecture, exception handling, and object-oriented programming (OOP) principles.",
-        "tags": ["Python", "OOP", "Cisco Networking Academy", "OpenEDG"],
+        "period": "2023",
+        "title": "PCAP: Python Programming",
+        "issuer": "Cisco & OpenEDG Python Institute",
+        "description": "Technical certification in Python fundamentals, data structures, and object-oriented programming.",
+        "footer": "Python \u2022 OOP \u2022 Cisco Academy",
         "featuredDark": false
       },
       {
         "number": "03",
-        "category": "award",
-        "badge": "1st Place Winner",
-        "period": "Issued 2024",
-        "title": "Bootcamp Software Development UBSI 2024",
-        "issuer": "University Bina Sarana Informatika (UBSI)",
-        "description": "Awarded 1st Place in the Web Development Bootcamp 2024 for designing and developing Otomod.com, a full-stack automotive news portal built with Laravel 9, Bootstrap 5, MySQL, and Figma.",
-        "tags": ["1st Place Winner", "Full-Stack Laravel", "UI/UX Design", "Web Bootcamp"],
+        "period": "1st Place \u2022 2024",
+        "title": "Web Development Bootcamp",
+        "issuer": "University Bina Sarana Informatika",
+        "description": "Won 1st Place for building Otomod.com, a full-stack automotive portal with Laravel & Figma.",
+        "footer": "Laravel \u2022 UI/UX \u2022 1st Winner",
         "featuredDark": false
       }
     ]
